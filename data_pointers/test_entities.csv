@@ -1,0 +1,927 @@
+test_id,query_name,expected_match,category,variant_type,original_name,source,source_id,entity_type
+1,ZALA AERO GRUP,1,true_match,phonetic,Zala Aero Group,EU,EU.10966.20,entity
+2,Spara battalion,1,true_match,drop_char,Sparta battalion,EU,EU.4054.60,entity
+3,Public Joint Stock Company “PIK-specialized hoebuilder”,1,true_match,drop_char,Public Joint Stock Company “PIK-specialized homebuilder”,EU,EU.12601.63,entity
+4,Al-Haramain (Afghansitan branch),1,true_match,swap_adjacent,Al-Haramain (Afghanistan branch),EU,EU.1104.17,entity
+5,Machana Ltd.,1,true_match,drop_char,Machanga Ltd.,EU,EU.3675.10,entity
+6,EL ASTILLERO SELENODOLSK,1,true_match,phonetic,El astillero Zelenodolsk,EU,EU.7815.38,entity
+7,Prom Kompzoit Ltd,1,true_match,swap_adjacent,Prom Kompozit Ltd,EU,EU.13823.5,entity
+8,Seigdar PSJC,1,true_match,drop_char,Seligdar PSJC,EU,EU.14631.43,entity
+9,Saakhte aTjhizate Niroogahi,1,true_match,swap_adjacent,Saakhte Tajhizate Niroogahi,EU,EU.13739.56,entity
+10,integral reszvenytarsasag integral holdingkezelo vallalat,1,true_match,case_punct,»Integral« Részvénytársaság – »Integral« Holdingkezelő Vállalat,EU,EU.12740.46,entity
+11,RAHKAR SANAIE NOVIN,1,true_match,phonetic,Rahkar Sanaye Novin,EU,EU.13877.40,entity
+12,ISIS Hnters,1,true_match,drop_char,ISIS Hunters,EU,EU.8584.74,entity
+13,Novikomabnk,1,true_match,swap_adjacent,Novikombank,EU,EU.8076.58,entity
+14,Kazan AviationPlant named after S. P. Gorbunov,1,true_match,drop_char,Kazan Aviation Plant named after S. P. Gorbunov,EU,EU.10985.56,entity
+15,CuideachtaComhstoic “103 Armored Repair Plant”,1,true_match,drop_char,Cuideachta Comhstoic “103 Armored Repair Plant”,EU,EU.12254.63,entity
+16,societatea deschisa pe actiuni belaruskali,1,true_match,case_punct,Societatea deschisă pe acțiuni «Belaruskali»,EU,EU.8273.79,entity
+17,Chinaoil (Hong Kong) CORP LTD,1,true_match,suffix_abbrev,Chinaoil (Hong Kong) Corporation Limited,EU,EU.13831.73,entity
+18,PRO-GAIN GROUP KORPORATION,1,true_match,phonetic,PRO-GAIN GROUP CORPORATION,EU,EU.4460.82,entity
+19,Air Force Intelligence Agency [Syra],1,true_match,drop_char,Air Force Intelligence Agency [Syria],EU,EU.2744.6,entity
+20,Sepasad Engineering Copany,1,true_match,drop_char,Sepasad Engineering Company,EU,EU.1836.93,entity
+21,Federal tate Enterprise PERM POWDER PLANT,1,true_match,drop_char,Federal State Enterprise PERM POWDER PLANT,EU,EU.10961.25,entity
+22,hezbollahi sojaline tiib,1,true_match,case_punct,Hezbollahi sõjaline tiib,EU,EU.3071.69,entity
+23,Korea Pugang Mining and MachineryCorporation ltd,1,true_match,drop_char,Korea Pugang Mining and Machinery Corporation ltd,EU,EU.4218.40,entity
+24,Ruskévojenské námorníctvo,1,true_match,drop_char,Ruské vojenské námorníctvo,EU,EU.9396.11,entity
+25,AEROSPAKE INDUSTRIES ORGANISATION,1,true_match,phonetic,Aerospace Industries Organisation,EU,EU.1807.55,entity
+26,Opolt battalion,1,true_match,swap_adjacent,Oplot battalion,EU,EU.3576.10,entity
+27,JSC “Zavolzhsky plant of crawler vehcile Plant”,1,true_match,swap_adjacent,JSC “Zavolzhsky plant of crawler vehicle Plant”,EU,EU.9420.49,entity
+28,TALLAMHO DESIGN BUREAU,1,true_match,phonetic,Tallamkho Design Bureau,EU,EU.11784.27,entity
+29,AKKIOVÁ SPOLEČNOST OKENIT,1,true_match,phonetic,Akciová společnost OKENIT,EU,EU.10368.61,entity
+30,GARN GRIF,1,true_match,swap_adjacent,GRAN GRIF,EU,EU.13342.93,entity
+31,Yaas Part,1,true_match,swap_adjacent,Yasa Part,EU,EU.1906.55,entity
+32,Brigada de Misiles Antiaéreso n.º 53,1,true_match,swap_adjacent,Brigada de Misiles Antiaéreos n.º 53,EU,EU.10379.29,entity
+33,a Siázi Forradalmi Bíróság 1. körzete,1,true_match,drop_char,a Sirázi Forradalmi Bíróság 1. körzete,EU,EU.12961.1,entity
+34,Movement ‘Novrossiya’ of Igor STRELKOV,1,true_match,drop_char,Movement ‘Novorossiya’ of Igor STRELKOV,EU,EU.4028.14,entity
+35,Javdean Mehr Toos,1,true_match,swap_adjacent,Javedan Mehr Toos,EU,EU.1959.52,entity
+36,Societatea pentru Diamante Nuărul Unu,1,true_match,drop_char,Societatea pentru Diamante Numărul Unu,EU,EU.14638.36,entity
+37,MInvest,1,true_match,drop_char,M-Invest,EU,EU.9786.78,entity
+38,Kimia Part Sivan CO,1,true_match,suffix_abbrev,Kimia Part Sivan Company,EU,EU.10866.11,entity
+39,Myanma r Timber  Enterprise,1,true_match,swap_adjacent,Myanmar  Timber  Enterprise,EU,EU.6440.23,entity
+40,Kalmius battailon,1,true_match,swap_adjacent,Kalmius battalion,EU,EU.3960.79,entity
+41,societatea de proiectare si fabricare de motoare de aeronave,1,true_match,case_punct,Societatea de proiectare și fabricare de  motoare de aeronave,EU,EU.9438.10,entity
+42,sitaka Zindasztiego,1,true_match,swap_adjacent,siatka Zindasztiego,EU,EU.13421.68,entity
+43,POLKOVDETS S.R.L.,1,true_match,drop_char,POLKOVODETS S.R.L.,EU,EU.14569.30,entity
+44,Volgaburmash oint Stock Company,1,true_match,drop_char,Volgaburmash Joint Stock Company,EU,EU.14024.17,entity
+45,VEIHAI WORLD-SHIPPING FREIGHT,1,true_match,phonetic,Weihai World-Shipping Freight,EU,EU.4463.79,entity
+46,JOSON PAEKHO MUIOK HOESA,1,true_match,phonetic,Joson Paekho Muyok Hoesa,EU,EU.8123.31,entity
+47,TEIF TADBIR ENGINEERING COMPANY,1,true_match,phonetic,Teyf Tadbir Engineering Company,EU,EU.12245.93,entity
+48,UO GUMICH RTK,1,true_match,phonetic,OOO Gumich RTK,EU,EU.12612.31,entity
+49,Pras Novin,1,true_match,swap_adjacent,Pars Novin,EU,EU.13895.77,entity
+50,JSK ROSNEFTFLOT,1,true_match,phonetic,JSC Rosneftflot,EU,EU.14030.87,entity
+51,JSCB Energoban k(JSC),1,true_match,swap_adjacent,JSCB Energobank (JSC),EU,EU.14696.46,entity
+52,HALDUSETTEVÕTJA TATNEFT-NEFTEKHIM LLK,1,true_match,phonetic,haldusettevõtja Tatneft-Neftekhim LLC,EU,EU.8298.12,entity
+53,MILIHUSE,1,true_match,phonetic,MILIHOUSE,EU,EU.2784.10,entity
+54,QUARTA DIVISÃO BLINDADA DO EXÉRKITO SÍRIO,1,true_match,phonetic,Quarta Divisão Blindada do Exército Sírio,EU,EU.10040.7,entity
+55,"MILE HAO XIANG TEKHNOLOGY CO., LTD",1,true_match,phonetic,"Mile Hao Xiang Technology Co., Ltd",EU,EU.13074.68,entity
+56,BancoKoryo,1,true_match,drop_char,Banco Koryo,EU,EU.4130.66,entity
+57,SEWA SECURITI SERVICES,1,true_match,phonetic,Sewa Security Services,EU,EU.9787.77,entity
+58,sh. abaie industries,1,true_match,drop_char,sh. Babaie industries,EU,EU.2021.63,entity
+59,Red Rok Ltd,1,true_match,drop_char,Red Rock Ltd,EU,EU.13475.6,entity
+60,»Stan« Korlátlt Felelősségű Társaság,1,true_match,drop_char,»Stan« Korlátolt Felelősségű Társaság,EU,EU.13013.61,entity
+61,Ruslan Georgievich AEFIEV,1,true_match,drop_char,Ruslan Georgievich AREFIEV,EU,EU.14593.40,individual
+62,MOLAH FASL,1,true_match,phonetic,Molah Fazl,EU,EU.800.13,individual
+63,NZENZE John Imani,1,true_match,reorder,John Imani NZENZE,EU,EU.12856.18,individual
+64,Jumah ALA-HMAD,1,true_match,swap_adjacent,Jumah AL-AHMAD,EU,EU.2645.6,individual
+65,AHMED ABDI AV-MOHAMED,1,true_match,phonetic,Ahmed Abdi aw-Mohamed,EU,EU.3738.60,individual
+66,Eric Ruhorimbere uhanga,1,true_match,drop_char,Eric Ruhorimbere Ruhanga,EU,EU.4058.17,individual
+67,Valey Vladimirovich SEMYONOV,1,true_match,drop_char,Valery Vladimirovich SEMYONOV,EU,EU.7690.68,individual
+68,ILJINYCH Vladimir Aleksejevitj,1,true_match,reorder,Vladimir Aleksejevitj ILJINYCH,EU,EU.7279.85,individual
+69,KOROVIN Denis Vladimirovich,1,true_match,reorder,Denis Vladimirovich KOROVIN,EU,EU.10753.36,individual
+70,MEDVEDEV Andrej Andrejevitj,1,true_match,reorder,Andrej Andrejevitj MEDVEDEV,EU,EU.10258.83,individual
+71,GALKIN Aleksandr Viktorovich,1,true_match,reorder,Aleksandr Viktorovich GALKIN,EU,EU.2798.65,individual
+72,LI XINIANG,1,true_match,phonetic,Li XINYANG,EU,EU.14072.58,individual
+73,NOSKOV Vasiliy Viktorovich,1,true_match,reorder,Vasiliy Viktorovich NOSKOV,EU,EU.9153.23,individual
+74,Tahir Jalil Habbush Al-Tirkiti,1,true_match,swap_adjacent,Tahir Jalil Habbush Al-Tikriti,EU,EU.120.33,individual
+75,Yury Viktoroivch NAZAROV,1,true_match,swap_adjacent,Yury Viktorovich NAZAROV,EU,EU.12903.88,individual
+76,TOKAREV Nikolay Petrovich,1,true_match,reorder,Nikolay Petrovich TOKAREV,EU,EU.7513.13,individual
+77,QADHAFI Khamis Muammar,1,true_match,reorder,Khamis Muammar QADHAFI,EU,EU.3848.26,individual
+78,alain francois viviane goetz,1,true_match,case_punct,Alain François Viviane GOETZ,EU,EU.9139.79,individual
+79,Hanafi Saihb,1,true_match,swap_adjacent,Hanafi Sahib,EU,EU.746.72,individual
+80,Dmirij Skoropupov,1,true_match,drop_char,Dmitrij Skoropupov,EU,EU.11199.34,individual
+81,Ab uHafs de Mauritaniër,1,true_match,swap_adjacent,Abu Hafs de Mauritaniër,EU,EU.420.36,individual
+82,VYATKIN Dmitry Fyodorovich,1,true_match,reorder,Dmitry Fyodorovich VYATKIN,EU,EU.7422.71,individual
+83,Min Aung Kyaw,1,true_match,reorder,Aung Kyaw Min,EU,EU.10432.72,individual
+84,HAMCHO Mohammed,1,true_match,reorder,Mohammed HAMCHO,EU,EU.3321.56,individual
+85,Alexanr Garmašov,1,true_match,drop_char,Alexandr Garmašov,EU,EU.14496.28,individual
+86,ANDREI VALERIEVIKH KATKOV,1,true_match,phonetic,Andrei Valerievich KATKOV,EU,EU.13189.41,individual
+87,Petr Aleksandroich ORLOV,1,true_match,drop_char,Petr Aleksandrovich ORLOV,EU,EU.10577.49,individual
+88,Mohammad Saer Abdelrahman AL-KHALIL,1,true_match,drop_char,Mohammad Samer Abdelrahman AL-KHALIL,EU,EU.3986.65,individual
+89,Semyon Aleeyevich MASHKAUTSAN,1,true_match,drop_char,Semyon Alexeyevich MASHKAUTSAN,EU,EU.11228.67,individual
+90,Iuire NECULITI,1,true_match,swap_adjacent,Iurie NECULITI,EU,EU.13144.73,individual
+91,Alevtina Vasilievna ANRDEEVA,1,true_match,swap_adjacent,Alevtina Vasilievna ANDREEVA,EU,EU.14419.79,individual
+92,Tatiana Georijevna Brattjenko,1,true_match,drop_char,Tatiana Georgijevna Brattjenko,EU,EU.10273.26,individual
+93,JUSJTJENKO Aleksandr Andrejevitj,1,true_match,reorder,Aleksandr Andrejevitj JUSJTJENKO,EU,EU.7045.67,individual
+94,Hani Abdel-Latif Tlfah Al-Tikriti,1,true_match,drop_char,Hani Abdel-Latif Tilfah Al-Tikriti,EU,EU.35.2,individual
+95,GONTJAROV Nikolaj Aleksandrovitj,1,true_match,reorder,Nikolaj  Aleksandrovitj GONTJAROV,EU,EU.7251.58,individual
+96,VLADIMIR STEPANOVIKH NIKITIN,1,true_match,phonetic,Vladimir Stepanovich NIKITIN,EU,EU.3722.75,individual
+97,Matvey ndreevich LIYBAVIN,1,true_match,drop_char,Matvey Andreevich LIYBAVIN,EU,EU.9285.34,individual
+98,BATALOVA Rima Akberdinovna,1,true_match,reorder,Rima Akberdinovna BATALOVA,EU,EU.7205.15,individual
+99,Khin Maun Swe,1,true_match,drop_char,Khin Maung Swe,EU,EU.6294.40,individual
+100,Shahabuddin Delaawr,1,true_match,swap_adjacent,Shahabuddin Delawar,EU,EU.332.2,individual
+101,FARHADI Ali,1,true_match,reorder,Ali FARHADI,EU,EU.3906.57,individual
+102,Viktor Vikorovitj KRAPKO,1,true_match,drop_char,Viktor Viktorovitj KRAPKO,EU,EU.10756.33,individual
+103,Lisjuk Alexej,1,true_match,reorder,Alexej Lisjuk,EU,EU.11414.23,individual
+104,YASAGHI Ali-Akbar,1,true_match,reorder,Ali-Akbar YASAGHI,EU,EU.2964.35,individual
+105,RUMJANTSEV Aleksandr Grigorjevitj,1,true_match,reorder,Aleksandr Grigorjevitj RUMJANTSEV,EU,EU.7368.29,individual
+106,MOUSSA HALILOLLAHI,1,true_match,phonetic,Moussa KHALILOLLAHI,EU,EU.2927.23,individual
+107,QADHAFI Saif al-Islam,1,true_match,reorder,Saif al-Islam QADHAFI,EU,EU.3858.27,individual
+108,Sergey Georgyievich LEVCHENKO,1,true_match,swap_adjacent,Sergey Georgiyevich LEVCHENKO,EU,EU.7051.40,individual
+109,HABIARIMANA MBITSHEMUNDA,1,true_match,phonetic,Habyarimana Mbitshemunda,EU,EU.12066.12,individual
+110,VASSERMAN Anatolij Aleksandrovitj,1,true_match,reorder,Anatolij  Aleksandrovitj VASSERMAN,EU,EU.7117.70,individual
+111,KabirAbdul,1,true_match,drop_char,Kabir Abdul,EU,EU.449.72,individual
+112,Rimma Vladimirovan FALALEYEVA,1,true_match,swap_adjacent,Rimma Vladimirovna FALALEYEVA,EU,EU.14453.58,individual
+113,Abdel Hami Mahmoud,1,true_match,drop_char,Abdel Hamid Mahmoud,EU,EU.11.43,individual
+114,Aleksej Borisovitj VLELER,1,true_match,swap_adjacent,Aleksej Borisovitj VELLER,EU,EU.7230.24,individual
+115,NDARUHUTSE Dominique,1,true_match,reorder,Dominique NDARUHUTSE,EU,EU.12067.11,individual
+116,KOLMAKOV Alexandr Petrovič,1,true_match,reorder,Alexandr Petrovič KOLMAKOV,EU,EU.10256.85,individual
+117,Ilshat Ilgizovich SHAGIAKMETOV,1,true_match,drop_char,Ilshat Ilgizovich SHAGIAKHMETOV,EU,EU.13341.94,individual
+118,Hosesin NEJAT,1,true_match,swap_adjacent,Hossein NEJAT,EU,EU.9075.47,individual
+119,ABD AL-KHALIQ AL-HUTHI,1,true_match,phonetic,Abd Al-Khaliq Al-Houthi,EU,EU.3970.80,individual
+120,Hlaing Min Aung,1,true_match,reorder,Min Aung Hlaing,EU,EU.6231.35,individual
+121,BOSPHORUS GATE DI TICARET LIMITED SIRKETI,1,true_match,drop_char,BOSPHORUS GATE DIS TICARET LIMITED SIRKETI,OFAC,45744,entity
+122,PRIVATE JOINT-STOCK COMPANY MAKO HODLING,1,true_match,swap_adjacent,PRIVATE JOINT-STOCK COMPANY MAKO HOLDING,OFAC,18325,entity
+123,RONNI MANAGEMENT B.V.,1,true_match,swap_adjacent,RONIN MANAGEMENT B.V.,OFAC,42978,entity
+124,NEPTUNUSL LC,1,true_match,swap_adjacent,NEPTUNUS LLC,OFAC,48307,entity
+125,AL-HARAMAIN : ALBANIA BANCH,1,true_match,drop_char,AL-HARAMAIN : ALBANIA BRANCH,OFAC,8259,entity
+126,LTD LIABILITY CO UPRAVLYAYUSHCHAYA KOMPANIYA EVOKORP,1,true_match,suffix_abbrev,LIMITED LIABILITY COMPANY UPRAVLYAYUSHCHAYA KOMPANIYA EVOKORP,OFAC,52177,entity
+127,ACCENTURE BUILING MATERIALS,1,true_match,drop_char,ACCENTURE BUILDING MATERIALS,OFAC,30971,entity
+128,SAMIR HERZALLAHAND BROTHERS FOR MONEY EXCHANGE AND REMITTANCES,1,true_match,drop_char,SAMIR HERZALLAH AND BROTHERS FOR MONEY EXCHANGE AND REMITTANCES,OFAC,47129,entity
+129,BLANCA GOODS VHOLESALER LLC,1,true_match,phonetic,BLANCA GOODS WHOLESALER LLC,OFAC,57578,entity
+130,LIMITED LIABILITY COMPANY SVEERNAYA ALMAZNAYA KOMPANIYA,1,true_match,swap_adjacent,LIMITED LIABILITY COMPANY SEVERNAYA ALMAZNAYA KOMPANIYA,OFAC,45016,entity
+131,ZHI XI INVESTMENT CO. LTD.,1,true_match,drop_char,ZHI XIN INVESTMENT CO. LTD.,OFAC,55846,entity
+132,"THERKUMEX, S.A. DE C.V.",1,true_match,phonetic,"THERCUMEX, S.A. DE C.V.",OFAC,54708,entity
+133,UNION DE INDUSRIA MILITAR,1,true_match,drop_char,UNION DE INDUSTRIA MILITAR,OFAC,58290,entity
+134,RN KOMSOMOLSKII REFINERY LLC,1,true_match,phonetic,RN KOMSOMOLSKIY REFINERY LLC,OFAC,18284,entity
+135,LTD LIABILITY CO VMK,1,true_match,suffix_abbrev,LIMITED LIABILITY COMPANY VMK,OFAC,46734,entity
+136,"ALIMENTOS Y DIVERSION INSURGENTES, S. DE R.L. E C.V.",1,true_match,drop_char,"ALIMENTOS Y DIVERSION INSURGENTES, S. DE R.L. DE C.V.",OFAC,55032,entity
+137,KAISSA TRAVEL KO LTD,1,true_match,phonetic,KAISSA TRAVEL CO LTD,OFAC,57189,entity
+138,PUBLIC JOINT STOCK CO RUSOLOVO,1,true_match,suffix_abbrev,PUBLIC JOINT STOCK COMPANY RUSOLOVO,OFAC,49388,entity
+139,LIMITED LIABILIYT COMPANY ALIS,1,true_match,swap_adjacent,LIMITED LIABILITY COMPANY ALIS,OFAC,48260,entity
+140,JOINT STOCK COMPANY ZOGRK,1,true_match,swap_adjacent,JOINT STOCK COMPANY OZGRK,OFAC,46727,entity
+141,EVERFIT COMPAN YLIMITED,1,true_match,swap_adjacent,EVERFIT COMPANY LIMITED,OFAC,31352,entity
+142,JOINT STOK COMPANY IBS IT SERVICES,1,true_match,phonetic,JOINT STOCK COMPANY IBS IT SERVICES,OFAC,48400,entity
+143,SPEED TRANSPORTATIO LIMITED,1,true_match,drop_char,SPEED TRANSPORTATION LIMITED,OFAC,25852,entity
+144,CENTRAL ELECTION COMMSISION OF THE REPUBLIC OF BELARUS,1,true_match,swap_adjacent,CENTRAL ELECTION COMMISSION OF THE REPUBLIC OF BELARUS,OFAC,30627,entity
+145,PROMETHEUS LIMITED TRADE DEVELOPEMNT,1,true_match,swap_adjacent,PROMETHEUS LIMITED TRADE DEVELOPMENT,OFAC,47434,entity
+146,SALNIA SHIP MANAGEMENT PVT LTD,1,true_match,swap_adjacent,SALINA SHIP MANAGEMENT PVT LTD,OFAC,51823,entity
+147,AL HAKEEL AL ASWAD OIL TRDG LLC,1,true_match,suffix_abbrev,AL HAKEEL AL ASWAD OIL TRADING LLC,OFAC,39698,entity
+148,LLC TSENTRTKHKHIMMASH,1,true_match,drop_char,LLC TSENTRTEKHKHIMMASH,OFAC,46049,entity
+149,"COMERCIAL VIOSMADEL NOROESTE, S.A. DE C.V.",1,true_match,drop_char,"COMERCIAL VIOSMA DEL NOROESTE, S.A. DE C.V.",OFAC,54663,entity
+150,LLK T-KOMPONENT SP,1,true_match,phonetic,LLC T-KOMPONENT SP,OFAC,41959,entity
+151,MIATH S.A.L.,1,true_match,drop_char,MIRATH S.A.L.,OFAC,28537,entity
+152,AVESTO OO,1,true_match,drop_char,AVESTO OOO,OFAC,42006,entity
+153,BARRIO1 8,1,true_match,swap_adjacent,BARRIO 18,OFAC,55416,entity
+154,NOVASTREAM LTD,1,true_match,suffix_abbrev,NOVASTREAM LIMITED,OFAC,38096,entity
+155,BARKAT IMPORT EXPORT LTDA,1,true_match,drop_char,BARAKAT IMPORT EXPORT LTDA,OFAC,8267,entity
+156,ISLAMIC REGIONAL COOPRATION BANK,1,true_match,drop_char,ISLAMIC REGIONAL COOPERATION BANK,OFAC,13146,entity
+157,LTD LIABILITY CO TORGRECHTRANS,1,true_match,suffix_abbrev,LIMITED LIABILITY COMPANY TORGRECHTRANS,OFAC,46042,entity
+158,"PAPA PETORLEUM CO., LTD.",1,true_match,swap_adjacent,"PAPA PETROLEUM CO., LTD.",OFAC,28049,entity
+159,"CORPOMEDIOS GV INVERSIOES, C.A.",1,true_match,drop_char,"CORPOMEDIOS GV INVERSIONES, C.A.",OFAC,26221,entity
+160,JOINT STOKK COMPANY CHERNIGOVETS,1,true_match,phonetic,JOINT STOCK COMPANY CHERNIGOVETS,OFAC,50328,entity
+161,IMUPLSE S.A.R.L.,1,true_match,swap_adjacent,IMPULSE S.A.R.L.,OFAC,25146,entity
+162,OBSHCHESTVO  OGRANICHENNOI OTVETSTVENNOSTYU FAKTOR TS,1,true_match,drop_char,OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU FAKTOR TS,OFAC,47250,entity
+163,LTD LIABILITY CO ZALA AERO,1,true_match,suffix_abbrev,LIMITED LIABILITY COMPANY ZALA AERO,OFAC,45934,entity
+164,ROSTAR RESEARCH AND PRODUCTION ASSOCIATION LIMITED LIABILITI COMPANY,1,true_match,phonetic,ROSTAR RESEARCH AND PRODUCTION ASSOCIATION LIMITED LIABILITY COMPANY,OFAC,48422,entity
+165,JINT STOCK COMPANY TAGANROG METALLURGICAL PLANT,1,true_match,drop_char,JOINT STOCK COMPANY TAGANROG METALLURGICAL PLANT,OFAC,47766,entity
+166,RAZAVI INFORMATION AND KOMMUNICATION TECHNOLOGY CO.,1,true_match,phonetic,RAZAVI INFORMATION AND COMMUNICATION TECHNOLOGY CO.,OFAC,30852,entity
+167,IRAN FOREIGN INVESTMENT COMPANI,1,true_match,phonetic,IRAN FOREIGN INVESTMENT COMPANY,OFAC,11627,entity
+168,THE NUCLEAR RACTORS FUEL COMPANY,1,true_match,drop_char,THE NUCLEAR REACTORS FUEL COMPANY,OFAC,25661,entity
+169,TROITSK CRANE PLANT LTD LIABILITY CO,1,true_match,suffix_abbrev,TROITSK CRANE PLANT LIMITED LIABILITY COMPANY,OFAC,49198,entity
+170,DAEDONG CREDIT BNAK,1,true_match,swap_adjacent,DAEDONG CREDIT BANK,OFAC,16085,entity
+171,AL-LAYTH ALZAHABE TRANSPORTATION AND SHIPPINGS ERVICES,1,true_match,swap_adjacent,AL-LAYTH ALZAHABE TRANSPORTATION AND SHIPPING SERVICES,OFAC,30666,entity
+172,"WESTLINE ENTERPRISES, INK.",1,true_match,phonetic,"WESTLINE ENTERPRISES, INC.",OFAC,19308,entity
+173,SELIN TEKHNIC CO,1,true_match,phonetic,SELIN TECHNIC CO,OFAC,41491,entity
+174,LIMITED LIABILITY KOMPANY SIBANTHRACITE TEPLOSET,1,true_match,phonetic,LIMITED LIABILITY COMPANY SIBANTHRACITE TEPLOSET,OFAC,48893,entity
+175,LAND METICSSARL,1,true_match,drop_char,LAND METICS SARL,OFAC,34485,entity
+176,LIMITED LIABILIT YCOMPANY UGOLNYY POTOK,1,true_match,swap_adjacent,LIMITED LIABILITY COMPANY UGOLNYY POTOK,OFAC,52532,entity
+177,"HONG KONG PRIME TADING CO., LIMITED",1,true_match,drop_char,"HONG KONG PRIME TRADING CO., LIMITED",OFAC,54141,entity
+178,BOSFOR AVRASIA IC VE DIS TICARET LIMITED SIRKETI,1,true_match,phonetic,BOSFOR AVRASYA IC VE DIS TICARET LIMITED SIRKETI,OFAC,46638,entity
+179,"AXIS SALE & MAINTENANKE BUILDINGS, S.A. DE C.V.",1,true_match,phonetic,"AXIS SALE & MAINTENANCE BUILDINGS, S.A. DE C.V.",OFAC,46209,entity
+180,ZAERCHE-OKA OOO,1,true_match,swap_adjacent,ZARECHE-OKA OOO,OFAC,36325,entity
+181,Seyyed Reza MIR MOHAMMAD ALI,1,true_match,reorder,"MIR MOHAMMAD ALI, Seyyed Reza",OFAC,49691,individual
+182,Muhammad QAHTAN AL-SA'IDI,1,true_match,reorder,"QAHTAN AL-SA'IDI, Muhammad",OFAC,55930,individual
+183,"MOSALLA, Majid",1,true_match,drop_char,"MOSALLAT, Majid",OFAC,53937,individual
+184,Euclides CORREA SALAS,1,true_match,reorder,"CORREA SALAS, Euclides",OFAC,30266,individual
+185,"QUISPE PALOIMNO, Jorge",1,true_match,swap_adjacent,"QUISPE PALOMINO, Jorge",OFAC,17121,individual
+186,Mansoor GASHASBI,1,true_match,reorder,"GASHASBI, Mansoor",OFAC,29837,individual
+187,Othman AL-GHAMDI,1,true_match,reorder,"AL-GHAMDI, Othman",OFAC,12787,individual
+188,"AZEMSHA, Siarhi Yakaulevich",1,true_match,drop_char,"AZEMSHA, Siarhei Yakaulevich",OFAC,32717,individual
+189,"NAING, Cht",1,true_match,drop_char,"NAING, Chit",OFAC,32291,individual
+190,Ahmed ABDALLA,1,true_match,reorder,"ABDALLA, Ahmed",OFAC,52601,individual
+191,"ARCE BORBO, Ana Cristina",1,true_match,drop_char,"ARCE BORBOA, Ana Cristina",OFAC,10992,individual
+192,Esmail GHANI,1,true_match,reorder,"GHANI, Esmail",OFAC,13107,individual
+193,"BEIS, Ahmad",1,true_match,drop_char,"BSEIS, Ahmad",OFAC,56716,individual
+194,Alejandro CABRERA SARABIA,1,true_match,reorder,"CABRERA SARABIA, Alejandro",OFAC,17147,individual
+195,"SAINOVIC, Nikoa",1,true_match,drop_char,"SAINOVIC, Nikola",OFAC,7783,individual
+196,"AL-WADI, Fayasl",1,true_match,swap_adjacent,"AL-WADI, Faysal",OFAC,28297,individual
+197,"BABAIE, Nematllah Hosein",1,true_match,drop_char,"BABAIE, Nematollah Hosein",OFAC,29811,individual
+198,"JIMENEZ TAPI,A Oscar Enrique",1,true_match,swap_adjacent,"JIMENEZ TAPIA, Oscar Enrique",OFAC,56824,individual
+199,"AKAKOV, Anatoly Gennadyevich",1,true_match,drop_char,"AKSAKOV, Anatoly Gennadyevich",OFAC,35466,individual
+200,"VASILIEV, ANATOLY IVANOVIKH",1,true_match,phonetic,"VASILIEV, Anatoly Ivanovich",OFAC,32716,individual
+201,"ARAMR, Mohammad Shafi",1,true_match,swap_adjacent,"ARMAR, Mohammad Shafi",OFAC,22525,individual
+202,"ZOLOTOV, Viktor Vasiliyevcih",1,true_match,swap_adjacent,"ZOLOTOV, Viktor Vasiliyevich",OFAC,24326,individual
+203,Sultan ZABIN,1,true_match,reorder,"ZABIN, Sultan",OFAC,30624,individual
+204,"NIM'AH, Hasan Abdallah",1,true_match,swap_adjacent,"NI'MAH, Hasan Abdallah",OFAC,54135,individual
+205,"MUJYAMBERE,L eopold",1,true_match,swap_adjacent,"MUJYAMBERE, Leopold",OFAC,11390,individual
+206,Emiliano SANCHEZ MARTINEZ,1,true_match,reorder,"SANCHEZ MARTINEZ, Emiliano",OFAC,49062,individual
+207,"JBER, Ayman",1,true_match,drop_char,"JABER, Ayman",OFAC,15606,individual
+208,Mehdi MASOUMIAN,1,true_match,reorder,"MASOUMIAN, Mehdi",OFAC,26583,individual
+209,"ALEMAN MEZA, OSKAR",1,true_match,phonetic,"ALEMAN MEZA, Oscar",OFAC,46495,individual
+210,Shefqet MUSLIU,1,true_match,reorder,"MUSLIU, Shefqet",OFAC,7751,individual
+211,"KHAKHATUROV, TIGRAN GARIKOVICH",1,true_match,phonetic,"KHACHATUROV, Tigran Garikovich",OFAC,36961,individual
+212,Fermin VILA MICHELENA,1,true_match,reorder,"VILA MICHELENA, Fermin",OFAC,7198,individual
+213,"VEKSELBERG, Vikotr Feliksovich",1,true_match,swap_adjacent,"VEKSELBERG, Viktor Feliksovich",OFAC,24306,individual
+214,"CASTANEDA MEA, Juan Carlos",1,true_match,drop_char,"CASTANEDA MEZA, Juan Carlos",OFAC,50551,individual
+215,"SATOLOKIN, KIRILL ANDREEVICH",1,true_match,phonetic,"ZATOLOKIN, Kirill Andreevich",OFAC,53995,individual
+216,"RAPOPORT, Brois Yakovlevich",1,true_match,swap_adjacent,"RAPOPORT, Boris Yakovlevich",OFAC,39265,individual
+217,"LUO LEON, Toribio Alberto",1,true_match,drop_char,"LUGO LEON, Toribio Alberto",OFAC,20994,individual
+218,"LAVRIK, ValentinaV asilevna",1,true_match,swap_adjacent,"LAVRIK, Valentina Vasilevna",OFAC,49408,individual
+219,"ARREAZA MONTSERART, Jorge Alberto",1,true_match,swap_adjacent,"ARREAZA MONTSERRAT, Jorge Alberto",OFAC,26694,individual
+220,Julio Cesar ESTRADA GUTIERREZ,1,true_match,reorder,"ESTRADA GUTIERREZ, Julio Cesar",OFAC,15523,individual
+221,Yevgeniya Aleksandrovna GUTSUL,1,true_match,reorder,"GUTSUL, Yevgeniya Aleksandrovna",OFAC,49416,individual
+222,"TYURIN, DENIS VALERIYEVIKH",1,true_match,phonetic,"TYURIN, Denis Valeriyevich",OFAC,31168,individual
+223,"AL-HADI, Ali Muhammad Mhsin Salih",1,true_match,drop_char,"AL-HADI, Ali Muhammad Muhsin Salih",OFAC,52915,individual
+224,Zafar IQBAL,1,true_match,reorder,"IQBAL, Zafar",OFAC,12916,individual
+225,Sergey Sergeevich KRAVTSOV,1,true_match,reorder,"KRAVTSOV, Sergey Sergeevich",OFAC,43110,individual
+226,"GARKIA BATTE, OMAR FERNANDO",1,true_match,phonetic,"GARCIA BATTE, Omar Fernando",OFAC,57369,individual
+227,"MARTINES RENTERIA, GILBERTO",1,true_match,phonetic,"MARTINEZ RENTERIA, Gilberto",OFAC,32500,individual
+228,Khalid AL-MARFADI,1,true_match,reorder,"AL-MARFADI, Khalid",OFAC,23049,individual
+229,"GOK, Mahumt",1,true_match,swap_adjacent,"GOK, Mahmut",OFAC,48264,individual
+230,Leonidas Nicolas CENTENO RIVERA,1,true_match,reorder,"CENTENO RIVERA, Leonidas Nicolas",OFAC,33613,individual
+231,Amin SHERRI,1,true_match,reorder,"SHERRI, Amin",OFAC,26955,individual
+232,Sergio VALENZUELA VALENZUELA,1,true_match,reorder,"VALENZUELA VALENZUELA, Sergio",OFAC,32494,individual
+233,Kuo Neng SHIH,1,true_match,reorder,"SHIH, Kuo Neng",OFAC,11280,individual
+234,"AL-TIKRITI, Rukan Razuki abd-l-Ghafur Sulaiman",1,true_match,drop_char,"AL-TIKRITI, Rukan Razuki abd-al-Ghafur Sulaiman",OFAC,7863,individual
+235,"HAMIHE, Abdallah",1,true_match,swap_adjacent,"HAMIEH, Abdallah",OFAC,58552,individual
+236,"DEFRUTOS, Jose Ignacio Reta",1,true_match,drop_char,"DE FRUTOS, Jose Ignacio Reta",OFAC,12668,individual
+237,"OLVRA ESTRADA, Arturo",1,true_match,drop_char,"OLVERA ESTRADA, Arturo",OFAC,12170,individual
+238,"TAVRIN, IVAN VLADIMIROVIKH",1,true_match,phonetic,"TAVRIN, Ivan Vladimirovich",OFAC,45924,individual
+239,"LECH, Gotthard",1,true_match,drop_char,"LERCH, Gotthard",OFAC,11364,individual
+240,"OLIVEROS FORERO, Caudia Viviana",1,true_match,drop_char,"OLIVEROS FORERO, Claudia Viviana",OFAC,56538,individual
+241,HUAXIN SIHPPING HONGKONG LTD,1,true_match,swap_adjacent,HUAXIN SHIPPING HONGKONG LTD,UN,6908693,entity
+242,AL-AKHTAR TRUS INTERNATIONAL,1,true_match,drop_char,AL-AKHTAR TRUST INTERNATIONAL,UN,113227,entity
+243,LASHKAR I JHANGV (LJ),1,true_match,drop_char,LASHKAR I JHANGVI (LJ),UN,114089,entity
+244,MANSUDAE OERSEAS PROJECT GROUP OF COMPANIES,1,true_match,drop_char,MANSUDAE OVERSEAS PROJECT GROUP OF COMPANIES,UN,6908625,entity
+245,BENEVOLENCE INTENATIONAL FOUNDATION,1,true_match,drop_char,BENEVOLENCE INTERNATIONAL FOUNDATION,UN,113474,entity
+246,VIV ANANM,1,true_match,drop_char,VIV ANSANM,UN,6909350,entity
+247,SEKOND ECONOMIC COMMITTEE,1,true_match,phonetic,SECOND ECONOMIC COMMITTEE,UN,6908528,entity
+248,LIBYAN AFRIKA INVESTMENT PORTFOLIO,1,true_match,phonetic,LIBYAN AFRICA INVESTMENT PORTFOLIO,UN,690783,entity
+249,GHRAAGAHE SAZANDEGI GHAEM,1,true_match,swap_adjacent,GHARAGAHE SAZANDEGI GHAEM,UN,110382,entity
+250,JUND AL-HILAFAH IN ALGERIA (JAK-A),1,true_match,phonetic,JUND AL-KHILAFAH IN ALGERIA (JAK-A),UN,6908486,entity
+251,MAHTAB AL-KHIDAMAT,1,true_match,phonetic,MAKHTAB AL-KHIDAMAT,UN,113858,entity
+252,"FIRST EAST EXPOR TBANK, P.L.C.",1,true_match,swap_adjacent,"FIRST EAST EXPORT BANK, P.L.C.",UN,110383,entity
+253,NOVIN ENERGY KOMPANY,1,true_match,phonetic,NOVIN ENERGY COMPANY,UN,110358,entity
+254,ASAT AL-ANSAR,1,true_match,drop_char,ASBAT AL-ANSAR,UN,113461,entity
+255,KREA DAESONG BANK,1,true_match,drop_char,KOREA DAESONG BANK,UN,6908552,entity
+256,ANASR AL-ISLAM,1,true_match,swap_adjacent,ANSAR AL-ISLAM,UN,113460,entity
+257,JAISH-I-MOAHMMED,1,true_match,swap_adjacent,JAISH-I-MOHAMMED,UN,113965,entity
+258,AKADEMY OF NATIONAL DEFENSE SCIENCE,1,true_match,phonetic,ACADEMY OF NATIONAL DEFENSE SCIENCE,UN,6908510,entity
+259,T.M.G. ENGINEERNIG LIMITED,1,true_match,swap_adjacent,T.M.G. ENGINEERING LIMITED,UN,6908343,entity
+260,TOSONG TECHNOLOGY TRADIGN CORPORATION,1,true_match,swap_adjacent,TOSONG TECHNOLOGY TRADING CORPORATION,UN,690766,entity
+261,STRATEGIK ROCKET FORCE OF THE KOREAN PEOPLE’S ARMY,1,true_match,phonetic,STRATEGIC ROCKET FORCE OF THE KOREAN PEOPLE’S ARMY,UN,6908597,entity
+262,AMMUNITION AND METALLURGI INDUSTRIES GROUP (AMIG),1,true_match,phonetic,AMMUNITION AND METALLURGY INDUSTRIES GROUP (AMIG),UN,110400,entity
+263,HARA CO,1,true_match,suffix_abbrev,HARA COMPANY,UN,110379,entity
+264,MINISRY OF NATIONAL DEFENCE,1,true_match,drop_char,MINISTRY OF NATIONAL DEFENCE,UN,6908657,entity
+265,UMMAH TAMEER E-NA U(UTN),1,true_match,swap_adjacent,UMMAH TAMEER E-NAU (UTN),UN,113883,entity
+266,ISLAMIC STATE IN IRA AND THE LEVANT - YEMEN,1,true_match,drop_char,ISLAMIC STATE IN IRAQ AND THE LEVANT - YEMEN,UN,6908837,entity
+267,DEFENSE TECHNOLOGY AND CSIENCE RESEARCH CENTER (DTSRC),1,true_match,swap_adjacent,DEFENSE TECHNOLOGY AND SCIENCE RESEARCH CENTER (DTSRC),UN,110392,entity
+268,NATIONAL AEROSPAKE TECHNOLOGY ADMINISTRATION,1,true_match,phonetic,NATIONAL AEROSPACE TECHNOLOGY ADMINISTRATION,UN,6908523,entity
+269,HARAKAT UL-MUJAHIDI N/ HUM,1,true_match,swap_adjacent,HARAKAT UL-MUJAHIDIN / HUM,UN,113263,entity
+270,CRUISE MISSILE INDUSTY GROUP,1,true_match,drop_char,CRUISE MISSILE INDUSTRY GROUP,UN,110394,entity
+271,YUK TUNG ENERGY PTELTD,1,true_match,drop_char,YUK TUNG ENERGY PTE LTD,UN,6908689,entity
+272,HILAL AHMAR SOCIETY NIDONESIA (HASI),1,true_match,swap_adjacent,HILAL AHMAR SOCIETY INDONESIA (HASI),UN,6908448,entity
+273,AL-AQIDA,1,true_match,swap_adjacent,AL-QAIDA,UN,113458,entity
+274,KHATAM AL-ABIYA CONSTRUCTION HEADQUARTERS (KAA),1,true_match,drop_char,KHATAM AL-ANBIYA CONSTRUCTION HEADQUARTERS (KAA),UN,110368,entity
+275,ANSAR AL-SHARIA’ IN TUNISIA (AAS-T),1,true_match,swap_adjacent,ANSAR AL-SHARI’A IN TUNISIA (AAS-T),UN,6908410,entity
+276,PISHGAM ENERGI INDUSTRIES,1,true_match,phonetic,PISHGAM ENERGY INDUSTRIES,UN,110350,entity
+277,HARAKAT-LU JIHAD ISLAMI,1,true_match,swap_adjacent,HARAKAT-UL JIHAD ISLAMI,UN,2921366,entity
+278,MODERN INDUSTRIES TECHNIQEU COMPANY (MITEC),1,true_match,swap_adjacent,MODERN INDUSTRIES TECHNIQUE COMPANY (MITEC),UN,110360,entity
+279,KOTI COP,1,true_match,drop_char,KOTI CORP,UN,6908681,entity
+280,HAJI KHAIRULLAH HAJI SATTAR MONE EXCHANGE,1,true_match,drop_char,HAJI KHAIRULLAH HAJI SATTAR MONEY EXCHANGE,UN,2989469,entity
+281,LIBYAN INVESTMEN TAUTHORITY,1,true_match,swap_adjacent,LIBYAN INVESTMENT AUTHORITY,UN,690782,entity
+282,LOGARKHEO S.A.,1,true_match,phonetic,LOGARCHEO S.A.,UN,6908335,entity
+283,SPECIAL PRPOSE ISLAMIC REGIMENT (SPIR),1,true_match,drop_char,SPECIAL PURPOSE ISLAMIC REGIMENT (SPIR),UN,114111,entity
+284,KHATIBA JAMA`AT AL-TAVHID WAL-JIHAD (KTJ),1,true_match,phonetic,KHATIBA JAMA`AT AL-TAWHID WAL-JIHAD (KTJ),UN,6908877,entity
+285,INDUSTRIAL FACTORIES OF PRECISION (IP) MACHINERY,1,true_match,drop_char,INDUSTRIAL FACTORIES OF PRECISION (IFP) MACHINERY,UN,110377,entity
+286,GHORB KRBALA,1,true_match,drop_char,GHORB KARBALA,UN,110381,entity
+287,SAHAND ALUMINUM PARTS INDUSTRIAL CO (SAPICO),1,true_match,suffix_abbrev,SAHAND ALUMINUM PARTS INDUSTRIAL COMPANY (SAPICO),UN,110343,entity
+288,ISLAMIC ARMI OF ADEN,1,true_match,phonetic,ISLAMIC ARMY OF ADEN,UN,114074,entity
+289,KOREA KWANGSONG TRDG CORP,1,true_match,suffix_abbrev,KOREA KWANGSONG TRADING CORPORATION,UN,6908519,entity
+290,TAIBAH INTERNATIONAL-BSONIA OFFICES,1,true_match,swap_adjacent,TAIBAH INTERNATIONAL-BOSNIA OFFICES,UN,114112,entity
+291,ALFA CO LTD FOR INTL TRDG AND MARKETING,1,true_match,suffix_abbrev,ALFA COMPANY LIMITED FOR INTERNATIONAL TRADING AND MARKETING,UN,6908341,entity
+292,AL-HARAMAIN: AFGHANISTNA BRANCH,1,true_match,swap_adjacent,AL-HARAMAIN: AFGHANISTAN BRANCH,UN,113453,entity
+293,JEMMAH ANSHORUT TAUHID (JA),1,true_match,drop_char,JEMMAH ANSHORUT TAUHID (JAT),UN,2983820,entity
+294,SAFETY EQUIPMENT PROCUREEMNT (SEP),1,true_match,swap_adjacent,SAFETY EQUIPMENT PROCUREMENT (SEP),UN,110344,entity
+295,RA HSAHEL,1,true_match,swap_adjacent,RAH SAHEL,UN,110348,entity
+296,AL-HARAMAIN: ALBANIA BRANKH,1,true_match,phonetic,AL-HARAMAIN: ALBANIA BRANCH,UN,113335,entity
+297,ISLAMIC SATE WEST AFRICA PROVINCE (ISWAP),1,true_match,drop_char,ISLAMIC STATE WEST AFRICA PROVINCE (ISWAP),UN,6908802,entity
+298,TAMAS CO,1,true_match,suffix_abbrev,TAMAS COMPANY,UN,110330,entity
+299,AMIN INDUSTRIALC OMPLEX,1,true_match,swap_adjacent,AMIN INDUSTRIAL COMPLEX,UN,110401,entity
+300,OCEAN MARITIME MANAGEMENT CO LTD (OMM),1,true_match,suffix_abbrev,"OCEAN MARITIME MANAGEMENT COMPANY, LIMITED (OMM)",UN,6908046,entity
+301,FUAD MOHAED KHALAF,1,true_match,drop_char,FUAD MOHAMED KHALAF,UN,6908037,individual
+302,HUSHANG NOBARI,1,true_match,phonetic,HOUSHANG NOBARI,UN,110419,individual
+303,MAHMOOD AQSA,1,true_match,reorder,AQSA MAHMOOD,UN,6908473,individual
+304,SHAMSDUDIN,1,true_match,swap_adjacent,SHAMSUDDIN,UN,111146,individual
+305,MUHSIN FADHIL AIED ASHOUR AL-FADHLI,1,true_match,phonetic,MUHSIN FADHIL AYED ASHOUR AL-FADHLI,UN,111704,individual
+306,TRAK BEN TAHER BEN FALEH OUNI HARZI,1,true_match,drop_char,TARAK BEN TAHER BEN FALEH OUNI HARZI,UN,6908454,individual
+307,CHO'NG-CH'O'L MUN,1,true_match,reorder,MUN CHO'NG-CH'O'L,UN,690750,individual
+308,AYMAN MAALIM,1,true_match,reorder,MAALIM AYMAN,UN,6908854,individual
+309,SULTANI MKENGA,1,true_match,drop_char,SULTANI MAKENGA,UN,6907999,individual
+310,HASSAN DAHIR AWYES,1,true_match,swap_adjacent,HASSAN DAHIR AWEYS,UN,111944,individual
+311,AL-FATEH ADBULLAH IDRIS,1,true_match,swap_adjacent,AL-FATEH ABDULLAH IDRIS,UN,6909528,individual
+312,ABDULLAH ALS-ENUSSI,1,true_match,swap_adjacent,ABDULLAH AL-SENUSSI,UN,690779,individual
+313,AZZOUZ ABD AL-BASET,1,true_match,reorder,ABD AL-BASET AZZOUZ,UN,6908525,individual
+314,IRUT ADOUGLAS MPAMO,1,true_match,swap_adjacent,IRUTA DOUGLAS MPAMO,UN,6908002,individual
+315,DELAWAR SHAHABUDDIN,1,true_match,reorder,SHAHABUDDIN DELAWAR,UN,111211,individual
+316,MUSSA BEN OMAR BEN ALI ESSAADI,1,true_match,phonetic,MOUSSA BEN OMAR BEN ALI ESSAADI,UN,112042,individual
+317,BARZAN ABD A-GHAFUR SULAIMAN MAJID AL-TIKRITI,1,true_match,drop_char,BARZAN ABD AL-GHAFUR SULAIMAN MAJID AL-TIKRITI,UN,6908058,individual
+318,M’UTASSIM YAHYA ‘ALI AL-RUMAYSH,1,true_match,swap_adjacent,MU’TASSIM YAHYA ‘ALI AL-RUMAYSH,UN,6908478,individual
+319,SAID AHAJI,1,true_match,drop_char,SAID BAHAJI,UN,112030,individual
+320,MOHAMMAD BRAHIM OMARI,1,true_match,drop_char,MOHAMMAD IBRAHIM OMARI,UN,111067,individual
+321,ABDUL SAMAD ACHEKSAI,1,true_match,phonetic,ABDUL SAMAD ACHEKZAI,UN,2983128,individual
+322,MUZAHIM A'B HASSAN AL-TIKRITI,1,true_match,drop_char,MUZAHIM SA'B HASSAN AL-TIKRITI,UN,6908059,individual
+323,JON MYONG UGK,1,true_match,swap_adjacent,JON MYONG GUK,UN,6908506,individual
+324,ZAHID MOHAMMAD,1,true_match,reorder,MOHAMMAD ZAHID,UN,111234,individual
+325,ARIF QASMNAI,1,true_match,swap_adjacent,ARIF QASMANI,UN,2863362,individual
+326,BELKALEM MOHAMED,1,true_match,reorder,MOHAMED BELKALEM,UN,2902221,individual
+327,VILSON JOSEPH,1,true_match,phonetic,WILSON JOSEPH,UN,6909382,individual
+328,RI SOG HYOK,1,true_match,drop_char,RI SONG HYOK,UN,6908655,individual
+329,QUREN SALIH QUREN AL QADAHFI,1,true_match,swap_adjacent,QUREN SALIH QUREN AL QADHAFI,UN,690736,individual
+330,ABDUL QADEERB ASIR ABDUL BASEER,1,true_match,swap_adjacent,ABDUL QADEER BASIR ABDUL BASEER,UN,111302,individual
+331,KNAG RYONG,1,true_match,swap_adjacent,KANG RYONG,UN,6908508,individual
+332,RUKAN RAZUKI ABD-AL-GHAFUR SULAIMAN AL-TIKITI,1,true_match,drop_char,RUKAN RAZUKI ABD-AL-GHAFUR SULAIMAN AL-TIKRITI,UN,6908068,individual
+333,WAZIR AHMED JAN AKHUNDZADA,1,true_match,reorder,AHMED JAN AKHUNDZADA WAZIR,UN,111083,individual
+334,LAURENT NKUDA,1,true_match,drop_char,LAURENT NKUNDA,UN,6908013,individual
+335,OSMAN MOHAMED HAMD MOHAMED,1,true_match,drop_char,OSMAN MOHAMED HAMID MOHAMED,UN,6909270,individual
+336,HANI AL-SAIYID AL-SEBAI YUSIF,1,true_match,phonetic,HANI AL-SAYYID AL-SEBAI YUSIF,UN,112021,individual
+337,Abdi Abdifatah Abubakar,1,true_match,reorder,Abdifatah Abubakar Abdi,UN,6908699,individual
+338,HAJI MUHAMMADASHRAF,1,true_match,drop_char,HAJI MUHAMMAD ASHRAF,UN,2832890,individual
+339,CHOL KIM TONG,1,true_match,reorder,KIM TONG CHOL,UN,6908645,individual
+340,MERAI ABDEFATTAH KHALIL SOGHBI,1,true_match,phonetic,MERAI ABDEFATTAH KHALIL ZOGHBI,UN,2758288,individual
+341,ALI AKBAR AHMAIAN,1,true_match,drop_char,ALI AKBAR AHMADIAN,UN,110443,individual
+342,REDOUANE ELH ABHAB,1,true_match,swap_adjacent,REDOUANE EL HABHAB,UN,2830919,individual
+343,SONG JO CHOL,1,true_match,reorder,JO CHOL SONG,UN,6908617,individual
+344,RUNIGA JEAN-MARIE LUGERERO,1,true_match,reorder,JEAN-MARIE LUGERERO RUNIGA,UN,6908019,individual
+345,AZZAM ABDULLAH ZUREI KAL-MAULID AL-SUBHI,1,true_match,swap_adjacent,AZZAM ABDULLAH ZUREIK AL-MAULID AL-SUBHI,UN,6908408,individual
+346,GHASEM OSLEYMANI,1,true_match,swap_adjacent,GHASEM SOLEYMANI,UN,110407,individual
+347,UDAY SADDMA HUSSEIN AL-TIKRITI,1,true_match,swap_adjacent,UDAY SADDAM HUSSEIN AL-TIKRITI,UN,6908050,individual
+348,JULKIPLI SALIM Y SALAMUDDIN,1,true_match,reorder,SALIM Y SALAMUDDIN JULKIPLI,UN,112007,individual
+349,JVAD RAHIQI,1,true_match,drop_char,JAVAD RAHIQI,UN,110416,individual
+350,MOHAMAD HAMDI MOHAMMAD SADIQ AL-AHDAL,1,true_match,drop_char,MOHAMMAD HAMDI MOHAMMAD SADIQ AL-AHDAL,UN,111660,individual
+351,AHMAD MAHMODO HASSAN,1,true_match,swap_adjacent,AHMAD MAHMOOD HASSAN,UN,6908994,individual
+352,GHAZY FEZZA HISHAN AL-MAIDIH,1,true_match,drop_char,GHAZY FEZZA HISHAN AL-MAZIDIH,UN,2892252,individual
+353,YO'N CH'NG NAM,1,true_match,drop_char,YO'N CHO'NG NAM,UN,690746,individual
+354,ZAHED ABDUL RAHMAN,1,true_match,reorder,ABDUL RAHMAN ZAHED,UN,110912,individual
+355,AL-TIKRITI KHAWLA BARZAN IBRAHIM HASAN,1,true_match,reorder,KHAWLA BARZAN IBRAHIM HASAN AL-TIKRITI,UN,6908113,individual
+356,AL-WALID MAHFOUZ OULD,1,true_match,reorder,MAHFOUZ OULD AL-WALID,UN,112026,individual
+357,ABDUL AUF ZAKIR,1,true_match,drop_char,ABDUL RAUF ZAKIR,UN,3000769,individual
+358,RI HUN HWAN,1,true_match,drop_char,RI CHUN HWAN,UN,6908652,individual
+359,KAMAL BEN MAOELDI BN HASSAN AL-HAMRAOUI,1,true_match,drop_char,KAMAL BEN MAOELDI BEN HASSAN AL-HAMRAOUI,UN,111916,individual
+360,ABDELKAEDR LAAGOUB,1,true_match,swap_adjacent,ABDELKADER LAAGOUB,UN,112483,individual
+361,PETER TIKRITI KHAWLA BARZAN IBRAHIM HASAN,0,near_miss,token_changed,Khawla Barzan Ibrahim Hasan Al-Tikriti,EU,EU.1462.85,individual
+362,ANDREW HE,0,near_miss,token_changed,"HE, Jiaxuan",OFAC,48701,individual
+363,SARAH SABAWI IBRAHIM HASAN AL TIKRITI,0,near_miss,token_changed,"AL-TIKRITI, Bashar Sabawi Ibrahim Hasan",OFAC,9353,individual
+364,OLIVIA CABRERA SARABIA,0,near_miss,token_changed,"CABRERA SARABIA, Alejandro",OFAC,17147,individual
+365,AISHA YURYEVNA BRODSKAIA,0,near_miss,token_changed,"BRODSKAIA, Elizaveta Yuryevna",OFAC,50566,individual
+366,LUCAS MEHRDADA AKHLAGHI,0,near_miss,token_changed,Mehrdada Akhlaghi Ketabachi,EU,EU.13694.60,individual
+367,SOFIA CHI SU,0,near_miss,token_changed,"SU, Lu-Chi",OFAC,11223,individual
+368,DANIEL YO N CHO NG,0,near_miss,token_changed,YO'N CHO'NG NAM,UN,690746,individual
+369,ROBERT ALEKSANDROVNA KAMYSHANOVA,0,near_miss,token_changed,"KAMYSHANOVA, Aleksandra Aleksandrovna",OFAC,35125,individual
+370,PAUL ALEKSEJ GENNADJEVITJ,0,near_miss,token_changed,Aleksej Gennadjevitj NETJAJEV,EU,EU.7449.2,individual
+371,ANDREW OO KHINE,0,near_miss,token_changed,"KHINE, Oo Oo",OFAC,11270,individual
+372,OLIVIA ANTON OLEGOVITJ,0,near_miss,token_changed,Anton Olegovitj JELIZAROV,EU,EU.9853.86,individual
+373,MEERA CAMILA TARDENCILLA RODRIGUEZ,0,near_miss,token_changed,"TARDENCILLA RODRIGUEZ, Nadia Camila",OFAC,41182,individual
+374,LUCAS DEL SOCORRO ALCOCER GARCIA,0,near_miss,token_changed,"ALCOCER GARCIA, Veronica del Socorro",OFAC,56066,individual
+375,MEERA RAHMATULLAH,0,near_miss,token_changed,RAHMATULLAH KAKAZADA,UN,111304,individual
+376,OLIVIA GERARDO IBARRA CARDONA,0,near_miss,token_changed,"IBARRA CARDONA, Luis Gerardo",OFAC,13358,individual
+377,WEI GENNADYEVNA ZLENKO,0,near_miss,token_changed,"ZLENKO, Yelena Gennadyevna",OFAC,36898,individual
+378,ELENA CHANG HO,0,near_miss,token_changed,Chang-Ho Paek,EU,EU.4012.29,individual
+379,MEERA SVETLANA,0,near_miss,token_changed,Svetlana Majborodová,EU,EU.11283.80,individual
+380,IRENE PALNYCHENKO,0,near_miss,token_changed,"PALNYCHENKO, Igor",OFAC,40491,individual
+381,PRIYA NAM SIN,0,near_miss,token_changed,SIN Kyu-Nam,EU,EU.4227.76,individual
+382,ELENA PETROVICH GRABCHAK,0,near_miss,token_changed,"GRABCHAK, Evgeniy Petrovich",OFAC,23546,individual
+383,DAVID AKIRAPHOKIN,0,near_miss,token_changed,"AKIRAPHOKIN, Thit",OFAC,11273,individual
+384,MEERA KHODADADI,0,near_miss,token_changed,"KHODADADI, Soghra",OFAC,34140,individual
+385,AISHA ALEKSANDROVNA CHERKASOVA,0,near_miss,token_changed,"CHERKASOVA, Irina Aleksandrovna",OFAC,44684,individual
+386,OLIVIA DZMITRYI,0,near_miss,token_changed,Dzmitryi Švedka,EU,EU.12908.83,individual
+387,ELENA YURIEVICH SURKOV,0,near_miss,token_changed,"SURKOV, Vladislav Yurievich",OFAC,16655,individual
+388,HELEN VLADIMIR,0,near_miss,token_changed,Vladimir Michejčik,EU,EU.11272.15,individual
+389,KEVIN MARTITEGUI LIZASO,0,near_miss,token_changed,"LIZASO, Jurdan Martitegui",OFAC,12918,individual
+390,AISHA MOHAMMED,0,near_miss,token_changed,Mohammed HAMCHO,EU,EU.3321.56,individual
+391,LUCAS YOUSSUF,0,near_miss,token_changed,Youssuf POURANVARI,EU,EU.9482.55,individual
+392,MARIA ULLAH GHULAM MUHAMMAD,0,near_miss,token_changed,"MUHAMMAD, Hayat Ullah Ghulam",OFAC,21392,individual
+393,THOMAS GUPTA,0,near_miss,token_changed,"GUPTA, Rajesh",OFAC,27586,individual
+394,MARIA VLADIMIROVICH MATVIYENKO,0,near_miss,token_changed,"MATVIYENKO, Sergey Vladimirovich",OFAC,38616,individual
+395,ANDREW SERGEYEVICH CHEMEZOV,0,near_miss,token_changed,"CHEMEZOV, Stanislav Sergeyevich",OFAC,35306,individual
+396,LAILA KONSTANTINOVICH NOSOV,0,near_miss,token_changed,"NOSOV, Sergey Konstantinovich",OFAC,41104,individual
+397,JOHN AL QAHTANI,0,near_miss,token_changed,"AL-QAHTANI, Saud",OFAC,26093,individual
+398,ANDREW DMITRIEVICH ARTAMONOV,0,near_miss,token_changed,"ARTAMONOV, Anatoly Dmitrievich",OFAC,36761,individual
+399,SOFIA MOHAMMAD,0,near_miss,token_changed,MOHAMMAD ZAHID,UN,111234,individual
+400,MARIA JONATHAN DILIAN,0,near_miss,token_changed,"DILIAN, Tal Jonathan",OFAC,48060,individual
+401,PAUL ABDUL RAZAAQ MEMON,0,near_miss,token_changed,"MEMON, Ibrahim Abdul Razaaq",OFAC,13102,individual
+402,JAMES RUBEN PESTANO LAVILLA,0,near_miss,token_changed,Ruben Pestano Lavilla (jr),EU,EU.1628.92,individual
+403,FATIMA NIKOLAEVICH VOROBYEV,0,near_miss,token_changed,"VOROBYEV, Vadim Nikolaevich",OFAC,51865,individual
+404,DAVID YEVGENEVICH PARSHIN,0,near_miss,token_changed,"PARSHIN, Andrei Yevgenevich",OFAC,33017,individual
+405,ANDREW MUSA BALUKU,0,near_miss,token_changed,"BALUKU, Seka Musa",OFAC,28024,individual
+406,LUCAS ANATOLIY VLADIMIROVICH,0,near_miss,token_changed,Anatoliy Vladimirovich CHEPIGA,EU,EU.4950.61,individual
+407,SARAH ELIXANDER LORENZANA CORDON,0,near_miss,token_changed,"LORENZANA CORDON, Eliu Elixander",OFAC,11978,individual
+408,JOHN BORISOVNA BONDARENKO,0,near_miss,token_changed,"BONDARENKO, Anastasiya Borisovna",OFAC,46007,individual
+409,HENRY AZZAWI HIKMAT MIZBAN IBRAHIM,0,near_miss,token_changed,HIKMAT MIZBAN IBRAHIM AL-AZZAWI,UN,6908075,individual
+410,DAVID MAZIDIH AKRAM TURKI HISHAN,0,near_miss,token_changed,AKRAM TURKI HISHAN AL-MAZIDIH,UN,2892251,individual
+411,JAMES ALI FA UR,0,near_miss,token_changed,"FA'UR, Husayn Ali",OFAC,18223,individual
+412,MICHAEL ALEXEJ IVANOVIČ,0,near_miss,token_changed,Alexej Ivanovič GIRIČEV,EU,EU.10422.6,individual
+413,THOMAS ISMAILOVICH SULEYMANOV,0,near_miss,token_changed,"SULEYMANOV, Renat Ismailovich",OFAC,35413,individual
+414,WEI JEVGENIJ JEVGENJEVITJ,0,near_miss,token_changed,Jevgenij Jevgenjevitj MARTJENKO,EU,EU.7444.7,individual
+415,PRIYA OLEG SERGEJEVITJ,0,near_miss,token_changed,Oleg Sergejevitj GAJDUKEVITJ,EU,EU.6460.58,individual
+416,MARIA JOHNS,0,near_miss,token_changed,Johns CATHEL,EU,EU.12372.12,individual
+417,NINA RAMON RODRIGUEZ RUIZ,0,near_miss,token_changed,"RODRIGUEZ RUIZ, Bayardo Ramon",OFAC,34110,individual
+418,LUCAS FEDOROVICH BARABANOV,0,near_miss,token_changed,"BARABANOV, Oleg Fedorovich",OFAC,50216,individual
+419,SOFIA ABDOULAYE,0,near_miss,token_changed,ABDOULAYE HISSENE,UN,6908579,individual
+420,HELEN ATO,0,near_miss,token_changed,"'ATO, Mustaf",OFAC,39519,individual
+421,NINA SAMI MUHAMMAD ABU MAREI,0,near_miss,token_changed,"ABU MAREI, Muhammad Sami Muhammad",OFAC,53917,individual
+422,HELEN VLADIMIROVNA KHLYAKINA,0,near_miss,token_changed,"KHLYAKINA, Oksana Vladimirovna",OFAC,36810,individual
+423,OLIVIA NAM KIM,0,near_miss,token_changed,"KIM, Ki Nam",OFAC,20126,individual
+424,SOFIA YURYEVICH PINCHUK,0,near_miss,token_changed,"PINCHUK, Andrei Yuryevich",OFAC,37676,individual
+425,OLIVIA AHMED,0,near_miss,token_changed,"AHMED, Ameen",OFAC,44442,individual
+426,JAMES ALEKSEJ NIKOLAJEVITJ,0,near_miss,token_changed,Aleksej Nikolajevitj TKATJOV,EU,EU.7469.37,individual
+427,JAMES DAHLIA SUSANTI,0,near_miss,token_changed,"SUSANTI, Dwi Dahlia",OFAC,37182,individual
+428,AISHA BLASKIC,0,near_miss,token_changed,"BLASKIC, Tihomir",OFAC,7661,individual
+429,AISHA SARUR,0,near_miss,token_changed,"SARUR, Muhammad",OFAC,27228,individual
+430,FATIMA NARIA BEN,0,near_miss,token_changed,Naria BEN FAZI,EU,EU.11492.68,individual
+431,JAMES VASILYEVICH VAKHROMEYEV,0,near_miss,token_changed,"VAKHROMEYEV, Ivan Vasilyevich",OFAC,40768,individual
+432,JAMES MOHAMMAD RASUL,0,near_miss,token_changed,MOHAMMAD RASUL AYYUB,UN,111147,individual
+433,THOMAS AHMED MOHAMMED AL HAIFI,0,near_miss,token_changed,"AL-HAIFI, Muaadh Ahmed Mohammed",OFAC,49361,individual
+434,MEERA ANDRIY YEVHENOVYCH,0,near_miss,token_changed,Andriy Yevhenovych PURHIN,EU,EU.3038.14,individual
+435,ROBERT VALERYEVICH KOKOV,0,near_miss,token_changed,"KOKOV, Kazbek Valeryevich",OFAC,41016,individual
+436,AISHA PYOTR ANATOLIYOVYCH,0,near_miss,token_changed,Pyotr Anatoliyovych ZIMA,EU,EU.2981.45,individual
+437,LINDA BINSIONOVICH ILIEV,0,near_miss,token_changed,"ILIEV, Zarakh Binsionovich",OFAC,46699,individual
+438,JAMES KIM HYOK,0,near_miss,token_changed,KIM Hyok Chan,EU,EU.4095.29,individual
+439,THOMAS IVAN NIKOLAEVICH,0,near_miss,token_changed,Ivan Nikolaevich TIMOFEEV,EU,EU.13916.42,individual
+440,ANDREW DMITRIEVICH BEGLOV,0,near_miss,token_changed,"BEGLOV, Aleksandr Dmitrievich",OFAC,35226,individual
+441,HENRY YURIEVNA GRAK,0,near_miss,token_changed,"GRAK, Olga Yurievna",OFAC,38077,individual
+442,SOFIA ADRISS,0,near_miss,token_changed,"ADRISS, Ahmad",OFAC,56714,individual
+443,FATIMA JULIJA ALJAKSANDRAUNA,0,near_miss,token_changed,Julija Aljaksandrauna BLIZNJUK,EU,EU.6337.38,individual
+444,IRENE VLADIMIR NIKOLAJEVITJ,0,near_miss,token_changed,Vladimir Nikolajevitj PLOTNIKOV,EU,EU.7354.64,individual
+445,HELEN PAVEL MIKALAJEVITJ,0,near_miss,token_changed,Pavel Mikalajevitj LJOHKI,EU,EU.6015.75,individual
+446,ELENA MOSALLAT,0,near_miss,token_changed,"MOSALLAT, Majid",OFAC,53937,individual
+447,ANNA ALEKSEYEVICH STRELCHENKO,0,near_miss,token_changed,"STRELCHENKO, Alexey Alekseyevich",OFAC,51343,individual
+448,HELEN GONG,0,near_miss,token_changed,"GONG, Jiao",OFAC,42940,individual
+449,ANNA ABDALLAH MAHDI,0,near_miss,token_changed,"MAHDI, Adil Abdallah",OFAC,7894,individual
+450,THOMAS TIKRITI KHAWLA BARZAN IBRAHIM HASAN,0,near_miss,token_changed,KHAWLA BARZAN IBRAHIM HASAN AL-TIKRITI,UN,6908113,individual
+451,AL NORTHERN AL DHAHABA,0,near_miss,token_changed,Al Silsilah al Dhahaba,EU,EU.4042.32,entity
+452,ALPHA STOCK COMPANY STUPINO ENGINEERING PRODUCTIVE ENTERPRISE,0,near_miss,token_changed,JOINT STOCK COMPANY STUPINO ENGINEERING PRODUCTIVE ENTERPRISE,OFAC,35894,entity
+453,7 ALPHA PHARY CO LTD,0,near_miss,token_changed,"7 MAKARA PHARY CO., LTD.",OFAC,28038,entity
+454,PIONEER DENIZCILIK VE TICARET ANONIM SIRKETI,0,near_miss,token_changed,BUMERZ DENIZCILIK VE TICARET ANONIM SIRKETI,OFAC,37448,entity
+455,LIMITED ATLANTIC COMPANY KRDV ZABAYKALYE,0,near_miss,token_changed,LIMITED LIABILITY COMPANY KRDV ZABAYKALYE,OFAC,47912,entity
+456,SUMMIT ACTION BATTALION,0,near_miss,token_changed,RAPID ACTION BATTALION,OFAC,33951,entity
+457,HORIZON PROYECTOS Y CONSTRUCCIONES S A DE C V,0,near_miss,token_changed,"COLINAS PROYECTOS Y CONSTRUCCIONES, S.A. DE C.V.",OFAC,56783,entity
+458,SUMMIT BASHNEFT OIL COMPANY,0,near_miss,token_changed,PJSC Bashneft Oil Company,EU,EU.14061.90,entity
+459,AL CENTRAL TRADING CO L L C,0,near_miss,token_changed,AL FOULK TRADING CO. L.L.C,OFAC,34986,entity
+460,PACIFIC ENERGY HOLDING PTE LTD,0,near_miss,token_changed,JIAXIANG ENERGY HOLDING PTE. LTD.,OFAC,30144,entity
+461,HORIZON TIMBER ENTERPRISE,0,near_miss,token_changed,Myanmar  Timber  Enterprise,EU,EU.6440.23,entity
+462,CENTRAL IMPERIAL MOVEMENT,0,near_miss,token_changed,RUSSIAN IMPERIAL MOVEMENT,OFAC,28703,entity
+463,UNITED LIMITATA B ISHMA BELARUSIAN POTASH COMPANY,0,near_miss,token_changed,Kumpanija Limitata b’Ishma ‘Belarusian Potash Company’,EU,EU.8280.51,entity
+464,PIONEER JOINT STOCK COMPANY COMMERCIAL BANK VERKHNEVOLZHSKY,0,near_miss,token_changed,OPEN JOINT STOCK COMPANY COMMERCIAL BANK VERKHNEVOLZHSKY,OFAC,19033,entity
+465,ALPHA RESEARCH AND PRODUCTION ENTERPRISE LIMITED LIABILITY COMPANY,0,near_miss,token_changed,INJECT RESEARCH AND PRODUCTION ENTERPRISE LIMITED LIABILITY COMPANY,OFAC,49390,entity
+466,LIMITED EASTERN COMPANY TRANSIT SERVICE BISHKEK,0,near_miss,token_changed,LIMITED LIABILITY COMPANY TRANSIT SERVICE BISHKEK,OFAC,49526,entity
+467,ALPHA ELAPH PETROLEUM DERIVATIVES IMPORT,0,near_miss,token_changed,YEMEN ELAPH PETROLEUM DERIVATIVES IMPORT,OFAC,54484,entity
+468,LNG SUMMIT SHIPPING PTE LTD,0,near_miss,token_changed,LNG GAMMA SHIPPING PTE LTD,OFAC,51284,entity
+469,ROYAL STOCK COMPANY OPTICAL MECHANICAL DESIGN BUREAU ASTRON,0,near_miss,token_changed,Joint-Stock Company “Optical-Mechanical Design Bureau ‘Astron’”,EU,EU.14022.19,entity
+470,PACIFIC KUMSAN TRADING CORPORATION,0,near_miss,token_changed,Korea Kumsan Trading Corporation,EU,EU.4129.41,entity
+471,ROYAL S OGRANICHENNOI OTVETSTVENNOSTYU ALYANS,0,near_miss,token_changed,OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU ALYANS,OFAC,47439,entity
+472,ROYAL SHIPPING CO,0,near_miss,token_changed,TETHIS SHIPPING CO,OFAC,55883,entity
+473,GLOBAL PETRO ARMAN KISH,0,near_miss,token_changed,GHADIR PETRO ARMAN KISH,OFAC,25964,entity
+474,PACIFIC RODINA OOO,0,near_miss,token_changed,GRUPPA RODINA OOO,OFAC,41516,entity
+475,CENTRAL NOVIN PARS MANUFACTURING AND COMMERCIAL INDUSTRIES,0,near_miss,token_changed,FURQAN NOVIN PARS MANUFACTURING AND COMMERCIAL INDUSTRIES,OFAC,56306,entity
+476,CENTRAL EAST ASIA BANK,0,near_miss,token_changed,NORTH EAST ASIA BANK,OFAC,20568,entity
+477,CENTRAL OBSHCHESTVO AKONIT URAL,0,near_miss,token_changed,AKTSIONERNOE OBSHCHESTVO AKONIT URAL,OFAC,47642,entity
+478,ATLANTIC LOS TRES REYES,0,near_miss,token_changed,FINCA LOS TRES REYES,OFAC,16637,entity
+479,UNITED PETERSBURG INTERNATIONAL BANKING CONFERENCE LLC,0,near_miss,token_changed,SAINT-PETERSBURG INTERNATIONAL BANKING CONFERENCE LLC,OFAC,34676,entity
+480,GLOBAL STOCK COMPANY 78 CENTRAL ENGINEERING BASE,0,near_miss,token_changed,JOINT STOCK COMPANY 78 CENTRAL ENGINEERING BASE,OFAC,51148,entity
+481,ROYAL MBS KAYUM CENTRE,0,near_miss,token_changed,GRUPO MBS - KAYUM CENTRE,OFAC,11795,entity
+482,OOO GLOBAL TURMA,0,near_miss,token_changed,OOO BITRIVER-TURMA,OFAC,36472,entity
+483,EASTERN INVESTMENT GROUP SAL OFF SHORE,0,near_miss,token_changed,PREMIER INVESTMENT GROUP SAL (OFF-SHORE),OFAC,24394,entity
+484,LLC BP NORTHERN,0,near_miss,token_changed,LLC BP INZHINIRING,OFAC,45989,entity
+485,VTB BANK PACIFIC CLOSED JOINT STOCK COMPANY,0,near_miss,token_changed,VTB BANK ARMENIA CLOSED JOINT STOCK COMPANY,OFAC,18722,entity
+486,UNITED OBSHCHESTVO BASHVZRYVTEKHNOLOGII,0,near_miss,token_changed,AKTSIONERNOE OBSHCHESTVO BASHVZRYVTEKHNOLOGII,OFAC,44969,entity
+487,CENTRAL AL HAYAT LTD,0,near_miss,token_changed,NAGHAM AL HAYAT LTD.,OFAC,27330,entity
+488,ROYAL RASANEH GOSTAR INSTITUTE,0,near_miss,token_changed,BAYAN RASANEH GOSTAR INSTITUTE,OFAC,30217,entity
+489,HORIZON HORIZONT PROJEKTENTWICKLUNGS GMBH CO KG,0,near_miss,token_changed,OZEAN HORIZONT PROJEKTENTWICKLUNGS GMBH & CO. KG,OFAC,44240,entity
+490,LIMITED PIONEER COMPANY GROUP OF COMPANIES AKVARIUS,0,near_miss,token_changed,LIMITED LIABILITY COMPANY GROUP OF COMPANIES AKVARIUS,OFAC,39141,entity
+491,PACIFIC MOGHADDAM INDUSTRIES,0,near_miss,token_changed,SHAHID MOGHADDAM INDUSTRIES,OFAC,23431,entity
+492,LLC ATLANTIC GPM,0,near_miss,token_changed,LLC HOLDING GPM,OFAC,47832,entity
+493,GLOBAL TRADING S A,0,near_miss,token_changed,OVLAS TRADING S.A.,OFAC,12456,entity
+494,ALPHA CASA GRANDE SARAJEVO BOSNIA AND HERZEGOVINA,0,near_miss,token_changed,"HOTEL CASA GRANDE - SARAJEVO, BOSNIA AND HERZEGOVINA",OFAC,17352,entity
+495,LIMITED ALPHA COMPANY AEROFREGAT,0,near_miss,token_changed,Limited Liability Company “Aerofregat”,EU,EU.13072.70,entity
+496,IC EASTERN CAPITAL LLC,0,near_miss,token_changed,IC VELES CAPITAL LLC,OFAC,40780,entity
+497,PIONEER UNITED ENGINE CORPORATION,0,near_miss,token_changed,PJSC United Engine Corporation,EU,EU.8087.26,entity
+498,UNITED UNMANNED SOLUTIONS CENTER LTD,0,near_miss,token_changed,COMPLEX UNMANNED SOLUTIONS CENTER LTD,OFAC,48441,entity
+499,SUMMIT JIASIBO TECHNOLOGY CO LTD,0,near_miss,token_changed,"SHENZHEN JIASIBO TECHNOLOGY CO., LTD.",OFAC,44018,entity
+500,GLOBAL STOCK COMPANY SCIENTIFIC RESEARCH INSTITUTE GIRICOND,0,near_miss,token_changed,JOINT STOCK COMPANY SCIENTIFIC RESEARCH INSTITUTE GIRICOND,OFAC,37772,entity
+501,PACIFIC IMPORT EXPORT CORP,0,near_miss,token_changed,SEGOVIA IMPORT & EXPORT CORP.,OFAC,19161,entity
+502,ROYAL COMMERCIAL PRIVATE UNITARY ENTERPRISE MINOTOR SERVICE,0,near_miss,token_changed,INDUSTRIAL-COMMERCIAL PRIVATE UNITARY ENTERPRISE MINOTOR-SERVICE,OFAC,34744,entity
+503,AO SUMMIT TREID INVEST,0,near_miss,token_changed,AO VOSTOK TREID INVEST,OFAC,44211,entity
+504,ATLANTIC COMHSTOIC UNITED INSTRUMENT MANUFACTURING CORPORATION,0,near_miss,token_changed,Cuideachta Comhstoic ‘United Instrument Manufacturing Corporation’,EU,EU.11753.24,entity
+505,PIONEER GOLD MINING LIMITED,0,near_miss,token_changed,HIGHLAND GOLD MINING LIMITED,OFAC,46711,entity
+506,LIMITED ROYAL COMPANY GROSS,0,near_miss,token_changed,LIMITED LIABILITY COMPANY GROSS,OFAC,47858,entity
+507,KS GLOBAL TRADERS,0,near_miss,token_changed,KS INTERNATIONAL TRADERS,OFAC,55448,entity
+508,NORTHERN MACARNIC PATINO Y CIA S C S,0,near_miss,token_changed,INVERSIONES MACARNIC PATINO Y CIA S.C.S.,OFAC,10001,entity
+509,AL HORIZON HOLDING COMPANY FOR TOURISM INVESTMENT,0,near_miss,token_changed,Al-Inma Holding Company for Tourism Investment,EU,EU.3383.89,entity
+510,LIMITED GLOBAL COMPANY ELGA FACTORIES,0,near_miss,token_changed,LIMITED LIABILITY COMPANY ELGA FACTORIES,OFAC,49438,entity
+511,ALPHA AL USAILI COMPANY FOR IMPORT LIMITED,0,near_miss,token_changed,YAHYA AL-USAILI COMPANY FOR IMPORT LIMITED,OFAC,54480,entity
+512,PIONEER TIMES HOTEL MANAGEMENT CO LTD,0,near_miss,token_changed,PRINCE TIMES HOTEL MANAGEMENT CO. LTD.,OFAC,55845,entity
+513,LIMITED NORTHERN COMPANY AMURSKIY METALLURGICHESKIY KOMBINAT,0,near_miss,token_changed,LIMITED LIABILITY COMPANY AMURSKIY METALLURGICHESKIY KOMBINAT,OFAC,49391,entity
+514,EASTERN METAL S A,0,near_miss,token_changed,BROTHER METAL S.A.,OFAC,57112,entity
+515,CENTRAL PROPERTIES CO LTD,0,near_miss,token_changed,GREENBAY PROPERTIES CO. LTD.,OFAC,55575,entity
+516,PACIFIC UNIDAS HOAS S A P I DE C V,0,near_miss,token_changed,"PERSONAS UNIDAS HOAS, S.A.P.I. DE C.V.",OFAC,51105,entity
+517,SUMMIT DASH GENERAL TRADING COMPANY LIMITED,0,near_miss,token_changed,BLUE DASH GENERAL TRADING COMPANY LIMITED,OFAC,58275,entity
+518,NORTHERN LOJISTIK ITHALAT IHRACAT TICARET SIRKETI,0,near_miss,token_changed,CRESTA LOJISTIK ITHALAT IHRACAT TICARET SIRKETI,OFAC,50918,entity
+519,PIONEER ZINC INDUSTRIAL GROUP,0,near_miss,token_changed,KOREA ZINC INDUSTRIAL GROUP,OFAC,22325,entity
+520,HK ALPHA HAOCHEN TRADING LIMITED,0,near_miss,token_changed,HK SIHANG HAOCHEN TRADING LIMITED,OFAC,46352,entity
+521,LIMITED PIONEER COMPANY ITECO KRAN,0,near_miss,token_changed,LIMITED LIABILITY COMPANY ITECO KRAN,OFAC,50397,entity
+522,CENTRAL PETROCHEM PRIVATE LIMITED,0,near_miss,token_changed,TIBALAJI PETROCHEM PRIVATE LIMITED,OFAC,39280,entity
+523,ROYAL PUBLIC JOINT STOCK COMMERCIAL ROADS BANK,0,near_miss,token_changed,RUSSIAN PUBLIC JOINT STOCK COMMERCIAL ROADS BANK,OFAC,51722,entity
+524,ATLANTIC HOLDING LLC,0,near_miss,token_changed,OBORON HOLDING LLC,OFAC,50757,entity
+525,LIMITED HORIZON COMPANY BIMEISTER,0,near_miss,token_changed,LIMITED LIABILITY COMPANY BIMEISTER,OFAC,47673,entity
+526,CENTRAL STOCK COMPANY OBORONAUTO,0,near_miss,token_changed,JOINT STOCK COMPANY OBORONAUTO,OFAC,49178,entity
+527,EASTERN LIMITED LIABILITY COMPANY,0,near_miss,token_changed,ALFA LIMITED LIABILITY COMPANY,OFAC,48612,entity
+528,OOO NORTHERN NORTH,0,near_miss,token_changed,OOO BITRIVER-NORTH,OFAC,36471,entity
+529,EASTERN ZHENHUAN CNC MACHINE TOOL CO LTD,0,near_miss,token_changed,"ZHEJIANG ZHENHUAN CNC MACHINE TOOL CO., LTD.",OFAC,49127,entity
+530,EASTERN ST LTD,0,near_miss,token_changed,OSTEC-ST LTD,OFAC,42865,entity
+531,XIN PACIFIC ELECTRONICS CO LIMITED,0,near_miss,token_changed,XIN QUAN ELECTRONICS CO LIMITED,OFAC,49926,entity
+532,ATLANTIC FORGING PRESS NUMERICAL CONTROL EQUIPMENT CO LTD,0,near_miss,token_changed,ANYANG FORGING PRESS NUMERICAL CONTROL EQUIPMENT CO LTD,OFAC,48809,entity
+533,EASTERN DOM PROMELECTRONIKA OOO,0,near_miss,token_changed,TORGOVYI DOM PROMELECTRONIKA OOO,OFAC,43237,entity
+534,HORIZON VESAL MIDDLE EAST COMPANY,0,near_miss,token_changed,ANDISHEH VESAL MIDDLE EAST COMPANY,OFAC,22698,entity
+535,GLOBAL MENKS LIMITED,0,near_miss,token_changed,ASTRID MENKS LIMITED,OFAC,53356,entity
+536,PACIFIC INVESTMENT LIMITED,0,near_miss,token_changed,MOMENT INVESTMENT LIMITED,OFAC,25837,entity
+537,CENTRAL INTERNATIONAL BANK,0,near_miss,token_changed,Ilsim International Bank,EU,EU.4104.20,entity
+538,ALPHA ALIMENTOS PROCESADOS S DE R L DE C V,0,near_miss,token_changed,GOTOCO ALIMENTOS PROCESADOS S. DE R.L. DE C.V.,OFAC,55028,entity
+539,PACIFIC DE SEGURANÇA NACIONAL DO GOVERNO DA ERITREIA,0,near_miss,token_changed,Agência de Segurança Nacional do Governo da Eritreia,EU,EU.6274.5,entity
+540,HORIZON RESOURCES CO LIMITED,0,near_miss,token_changed,"UNITE RESOURCES CO., LIMITED",OFAC,40964,entity
+541,Evolution Metals & Technologies Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+542,Bodhi Tree Biotechnology Inc,0,true_negative,sec_edgar_company,,SEC,,entity
+543,"Strata Critical Medical, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+544,"ReTo Eco-Solutions, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+545,COLONY BANKCORP INC,0,true_negative,sec_edgar_company,,SEC,,entity
+546,CROSS TIMBERS ROYALTY TRUST,0,true_negative,sec_edgar_company,,SEC,,entity
+547,"HG Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+548,"Thunder Power Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+549,GAXOS.AI INC.,0,true_negative,sec_edgar_company,,SEC,,entity
+550,"Maruwa Co., Ltd./ADR",0,true_negative,sec_edgar_company,,SEC,,entity
+551,Legacy Housing Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+552,SPROTT PHYSICAL PLATINUM & PALLADIUM TRUST,0,true_negative,sec_edgar_company,,SEC,,entity
+553,REGENXBIO Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+554,"Taysha Gene Therapies, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+555,StoneBridge Acquisition II Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+556,"Flash Sports & Media Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+557,"InPoint Commercial Real Estate Income, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+558,Navios Maritime Partners L.P.,0,true_negative,sec_edgar_company,,SEC,,entity
+559,INTERNATIONAL TOWER HILL MINES LTD,0,true_negative,sec_edgar_company,,SEC,,entity
+560,ADVANTEST CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+561,AMERICAN EXPRESS CO,0,true_negative,sec_edgar_company,,SEC,,entity
+562,Millennium Group International Holdings Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+563,"HomeTrust Bancshares, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+564,VEECO INSTRUMENTS INC,0,true_negative,sec_edgar_company,,SEC,,entity
+565,KOSS CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+566,"BrightSpring Health Services, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+567,"PALISADE BIO, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+568,"BioCardia, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+569,Top Wealth Group Holding Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+570,KIRBY CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+571,IDEX CORP /DE/,0,true_negative,sec_edgar_company,,SEC,,entity
+572,"Ensysce Biosciences, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+573,"Unusual Machines, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+574,La Rosa Holdings Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+575,Brookfield Real Assets Income Fund Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+576,Golden Sun Technology Group Ltd.,0,true_negative,sec_edgar_company,,SEC,,entity
+577,"Cycclone, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+578,"GOLUB CAPITAL BDC, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+579,TALOS ENERGY INC.,0,true_negative,sec_edgar_company,,SEC,,entity
+580,Renatus Tactical Acquisition Corp I,0,true_negative,sec_edgar_company,,SEC,,entity
+581,"Latham Group, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+582,DATA I/O CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+583,"Mag Mile Capital, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+584,"BITMINE IMMERSION TECHNOLOGIES, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+585,Jyong Biotech Ltd.,0,true_negative,sec_edgar_company,,SEC,,entity
+586,"MIND TECHNOLOGY, INC",0,true_negative,sec_edgar_company,,SEC,,entity
+587,UR-ENERGY INC,0,true_negative,sec_edgar_company,,SEC,,entity
+588,Adaptimmune Therapeutics PLC,0,true_negative,sec_edgar_company,,SEC,,entity
+589,INTERPARFUMS INC,0,true_negative,sec_edgar_company,,SEC,,entity
+590,Greenpro Capital Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+591,Wendy's Co,0,true_negative,sec_edgar_company,,SEC,,entity
+592,"HIGH WIRE NETWORKS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+593,"VNET Group, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+594,Great Pacific Gold Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+595,Hewlett Packard Enterprise Co,0,true_negative,sec_edgar_company,,SEC,,entity
+596,"Proficient Auto Logistics, Inc",0,true_negative,sec_edgar_company,,SEC,,entity
+597,NOVA LTD.,0,true_negative,sec_edgar_company,,SEC,,entity
+598,"Thryv Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+599,Cushman & Wakefield Ltd.,0,true_negative,sec_edgar_company,,SEC,,entity
+600,"BLACKROCK MUNIYIELD QUALITY FUND III, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+601,"Triumph Financial, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+602,SMARTFINANCIAL INC.,0,true_negative,sec_edgar_company,,SEC,,entity
+603,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+604,"First Tracks Biotherapeutics, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+605,"cbdMD, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+606,Cannaisseur Group Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+607,"Bright Mountain Media, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+608,Femto Technologies Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+609,PEOPLES BANCORP INC,0,true_negative,sec_edgar_company,,SEC,,entity
+610,CCC Intelligent Solutions Holdings Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+611,LOBO TECHNOLOGIES LTD.,0,true_negative,sec_edgar_company,,SEC,,entity
+612,WILSON BANK HOLDING CO,0,true_negative,sec_edgar_company,,SEC,,entity
+613,LiPower New Energy Holdings Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+614,"CoastalSouth Bancshares, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+615,Fervo Energy Co,0,true_negative,sec_edgar_company,,SEC,,entity
+616,MASS MEGAWATTS WIND POWER INC,0,true_negative,sec_edgar_company,,SEC,,entity
+617,BURZYNSKI RESEARCH INSTITUTE INC,0,true_negative,sec_edgar_company,,SEC,,entity
+618,DouYu International Holdings Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+619,Ellington Financial Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+620,Voya Emerging Markets High Dividend Equity Fund,0,true_negative,sec_edgar_company,,SEC,,entity
+621,COGNIZANT TECHNOLOGY SOLUTIONS CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+622,Brookfield Infrastructure Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+623,MANNKIND CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+624,OGE ENERGY CORP.,0,true_negative,sec_edgar_company,,SEC,,entity
+625,Northann Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+626,"ADARx Pharmaceuticals, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+627,Quantum Genesis AI Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+628,BestGofer Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+629,"Esquire Financial Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+630,TAT TECHNOLOGIES LTD,0,true_negative,sec_edgar_company,,SEC,,entity
+631,Bristow Group Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+632,OCTAVE SPECIALTY GROUP INC,0,true_negative,sec_edgar_company,,SEC,,entity
+633,Arbutus Biopharma Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+634,NATIONAL PRESTO INDUSTRIES INC,0,true_negative,sec_edgar_company,,SEC,,entity
+635,SEACOAST BANKING CORP OF FLORIDA,0,true_negative,sec_edgar_company,,SEC,,entity
+636,TCL Electronics Holdings Limited/ADR,0,true_negative,sec_edgar_company,,SEC,,entity
+637,"ECB Bancorp, Inc. /MD/",0,true_negative,sec_edgar_company,,SEC,,entity
+638,"HACKETT GROUP, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+639,Forestar Group Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+640,Tactical Resources Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+641,ORASURE TECHNOLOGIES INC,0,true_negative,sec_edgar_company,,SEC,,entity
+642,"ACTUATE THERAPEUTICS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+643,"Acumen Pharmaceuticals, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+644,"Inmune Bio, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+645,INTERNATIONAL BATTERY METALS LTD.,0,true_negative,sec_edgar_company,,SEC,,entity
+646,STARBUCKS CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+647,"BELLRING BRANDS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+648,WEX Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+649,AECOM,0,true_negative,sec_edgar_company,,SEC,,entity
+650,"Virtu Financial, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+651,ADDENTAX GROUP CORP.,0,true_negative,sec_edgar_company,,SEC,,entity
+652,Celcuity Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+653,Invesco Pennsylvania Value Municipal Income Trust,0,true_negative,sec_edgar_company,,SEC,,entity
+654,CORVEL CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+655,ALTA EQUIPMENT GROUP INC.,0,true_negative,sec_edgar_company,,SEC,,entity
+656,BJs RESTAURANTS INC,0,true_negative,sec_edgar_company,,SEC,,entity
+657,Lottomatica Group S.p.A./ADR,0,true_negative,sec_edgar_company,,SEC,,entity
+658,GMV Minerals Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+659,REGIONS FINANCIAL CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+660,TEEKAY TANKERS LTD.,0,true_negative,sec_edgar_company,,SEC,,entity
+661,Futu Holdings Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+662,CGI INC,0,true_negative,sec_edgar_company,,SEC,,entity
+663,MASCO CORP /DE/,0,true_negative,sec_edgar_company,,SEC,,entity
+664,Peraso Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+665,ODNB Financial Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+666,SOUTHERN SILVER EXPLORATION CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+667,CHINA YUCHAI INTERNATIONAL LTD,0,true_negative,sec_edgar_company,,SEC,,entity
+668,Costamare Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+669,FORTUNA MINING CORP.,0,true_negative,sec_edgar_company,,SEC,,entity
+670,East West Ave Acquisition Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+671,YHN Acquisition I Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+672,"Arhaus, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+673,Morgan Stanley Direct Lending Fund,0,true_negative,sec_edgar_company,,SEC,,entity
+674,Brookfield Infrastructure Partners L.P.,0,true_negative,sec_edgar_company,,SEC,,entity
+675,"Defi Technologies, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+676,Tomy Co Ltd/ADR,0,true_negative,sec_edgar_company,,SEC,,entity
+677,BrilliA Inc,0,true_negative,sec_edgar_company,,SEC,,entity
+678,"Virtus Dividend, Interest & Premium Strategy Fund",0,true_negative,sec_edgar_company,,SEC,,entity
+679,"PROCACCIANTI HOTEL REIT, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+680,ATII Holdings Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+681,Antalpha Platform Holding Co,0,true_negative,sec_edgar_company,,SEC,,entity
+682,"Piedmont Realty Trust, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+683,American Airlines Group Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+684,"KULR Technology Group, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+685,SOLAI Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+686,GigCapital9 Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+687,Energous Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+688,LTC PROPERTIES INC,0,true_negative,sec_edgar_company,,SEC,,entity
+689,Perimeter Acquisition Corp. I,0,true_negative,sec_edgar_company,,SEC,,entity
+690,MESA LABORATORIES INC /CO/,0,true_negative,sec_edgar_company,,SEC,,entity
+691,READING INTERNATIONAL INC,0,true_negative,sec_edgar_company,,SEC,,entity
+692,"TYSON FOODS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+693,"Amer Sports, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+694,S&P Global Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+695,"Vertex, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+696,"SKINVISIBLE, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+697,Neolara Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+698,Eaton Vance Municipal Bond Fund,0,true_negative,sec_edgar_company,,SEC,,entity
+699,TIMBERLAND BANCORP INC,0,true_negative,sec_edgar_company,,SEC,,entity
+700,MTN GROUP LTD/ADR,0,true_negative,sec_edgar_company,,SEC,,entity
+701,"BLACKROCK MUNIHOLDINGS CALIFORNIA QUALITY FUND, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+702,"Luvu Brands, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+703,WOLTERS KLUWER N V /FI,0,true_negative,sec_edgar_company,,SEC,,entity
+704,"SDR Drone, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+705,"Lumexa Imaging Holdings, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+706,ASPEN INSURANCE HOLDINGS LTD,0,true_negative,sec_edgar_company,,SEC,,entity
+707,"Rent the Runway, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+708,Sony Group Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+709,MBody AI Ltd.,0,true_negative,sec_edgar_company,,SEC,,entity
+710,INTERLINK ELECTRONICS INC,0,true_negative,sec_edgar_company,,SEC,,entity
+711,"AGIOS PHARMACEUTICALS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+712,Catalyst Acquisition Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+713,"UNIVERSAL SAFETY PRODUCTS, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+714,"BLACKROCK FLOATING RATE INCOME STRATEGIES FUND, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+715,Aris Mining Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+716,SIMILARWEB LTD.,0,true_negative,sec_edgar_company,,SEC,,entity
+717,PRINCETON CAPITAL CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+718,GENMAB A/S,0,true_negative,sec_edgar_company,,SEC,,entity
+719,Quantum eMotion Corp,0,true_negative,sec_edgar_company,,SEC,,entity
+720,V F CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+721,Skillsoft Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+722,"Precipio, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+723,"MOLINA HEALTHCARE, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+724,"HAWTHORN BANCSHARES, INC.",0,true_negative,sec_edgar_company,,SEC,,entity
+725,VIVOS INC,0,true_negative,sec_edgar_company,,SEC,,entity
+726,TOYOTA MOTOR CORP/,0,true_negative,sec_edgar_company,,SEC,,entity
+727,"Troops, Inc. /Cayman Islands/",0,true_negative,sec_edgar_company,,SEC,,entity
+728,Almonty Industries Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+729,Copper Property CTL Pass Through Trust,0,true_negative,sec_edgar_company,,SEC,,entity
+730,Marex Group Ltd,0,true_negative,sec_edgar_company,,SEC,,entity
+731,Mobility Global Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+732,Nuveen Core Equity Alpha Fund,0,true_negative,sec_edgar_company,,SEC,,entity
+733,CAPITAL ONE FINANCIAL CORP,0,true_negative,sec_edgar_company,,SEC,,entity
+734,"Aura Biosciences, Inc.",0,true_negative,sec_edgar_company,,SEC,,entity
+735,ATS Corp /ATS,0,true_negative,sec_edgar_company,,SEC,,entity
+736,Cluster Group Holdings Ltd Co,0,true_negative,sec_edgar_company,,SEC,,entity
+737,Medical Care Technologies Inc.,0,true_negative,sec_edgar_company,,SEC,,entity
+738,WHITECAP RESOURCES INC.,0,true_negative,sec_edgar_company,,SEC,,entity
+739,Equinox Gold Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+740,Aeon Acquisition I Corp.,0,true_negative,sec_edgar_company,,SEC,,entity
+741,WEI BROWN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+742,NINA SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+743,MARIA SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+744,PAUL GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+745,HELEN TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+746,PRIYA TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+747,MICHAEL GARCIA,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+748,JAMES RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+749,JAMES SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+750,DANIEL GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+751,SOFIA JONES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+752,SARAH MILLER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+753,IRENE HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+754,MEERA HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+755,MARIA RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+756,THOMAS MILLER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+757,ANDREW PEREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+758,DANIEL TORRES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+759,LUCAS GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+760,NINA WILSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+761,HELEN SCOTT,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+762,CARLOS LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+763,ANNA ANDERSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+764,MICHAEL MILLER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+765,PRIYA PEREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+766,ELENA SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+767,CARLOS PEREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+768,JAMES SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+769,MICHAEL WALKER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+770,SARAH JONES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+771,SOFIA JACKSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+772,LUCAS PATEL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+773,PRIYA WILLIAMS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+774,JOHN WILSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+775,FATIMA LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+776,PAUL FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+777,OLIVIA MILLER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+778,HENRY SCOTT,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+779,IRENE NGUYEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+780,ELENA MOORE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+781,ANNA FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+782,DANIEL SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+783,SOFIA RODRIGUEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+784,DANIEL LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+785,LUCAS PEREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+786,LAILA YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+787,JOHN THOMPSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+788,JAMES FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+789,HELEN HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+790,WEI SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+791,THOMAS ANDERSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+792,THOMAS HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+793,HENRY SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+794,SARAH JOHNSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+795,NINA DAVIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+796,LINDA TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+797,MEERA LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+798,PAUL TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+799,NINA GARCIA,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+800,MARIA RODRIGUEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+801,PRIYA ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+802,LINDA GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+803,DAVID SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+804,MICHAEL WILLIAMS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+805,SARAH FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+806,WEI THOMPSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+807,DAVID JACKSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+808,DANIEL WILLIAMS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+809,THOMAS RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+810,LUCAS MARTIN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+811,PAUL JOHNSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+812,SARAH THOMPSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+813,DANIEL TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+814,MICHAEL SCOTT,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+815,MARIA TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+816,IRENE ANDERSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+817,NINA SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+818,THOMAS PEREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+819,ELENA ROBINSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+820,LUCAS SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+821,JOHN ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+822,JOHN GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+823,MARIA MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+824,MICHAEL RODRIGUEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+825,JOHN LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+826,PETER TORRES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+827,ANDREW WILSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+828,SARAH KING,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+829,JOHN LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+830,MEERA WALKER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+831,LINDA HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+832,MEERA GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+833,SARAH LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+834,ELENA FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+835,SARAH LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+836,LINDA NGUYEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+837,WEI GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+838,ROBERT YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+839,JOHN HARRIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+840,CARLOS SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+841,ELENA YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+842,WEI LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+843,THOMAS PATEL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+844,PAUL MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+845,ANDREW YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+846,FATIMA GARCIA,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+847,PAUL LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+848,NINA SCOTT,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+849,DAVID TORRES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+850,MEERA LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+851,ROBERT SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+852,WEI LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+853,WEI MARTIN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+854,CARLOS TORRES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+855,NINA YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+856,DAVID YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+857,MICHAEL MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+858,HELEN GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+859,LAILA KING,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+860,MEERA HARRIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+861,OLIVIA CLARK,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+862,HELEN RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+863,CARLOS HARRIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+864,CARLOS ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+865,LINDA HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+866,JOHN RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+867,KEVIN WILLIAMS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+868,HELEN DAVIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+869,CARLOS NGUYEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+870,ELENA GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+871,PAUL LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+872,ROBERT WHITE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+873,THOMAS ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+874,LUCAS HARRIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+875,HENRY BROWN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+876,LUCAS SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+877,HELEN LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+878,MEERA TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+879,SARAH YOUNG,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+880,MARIA HARRIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+881,LUCAS JOHNSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+882,HENRY MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+883,ROBERT FLORES,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+884,WEI MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+885,ROBERT TAYLOR,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+886,NINA HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+887,SOFIA HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+888,JAMES DAVIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+889,PAUL GARCIA,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+890,CARLOS HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+891,KEVIN GARCIA,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+892,THOMAS GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+893,KEVIN LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+894,ELENA LEWIS,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+895,ROBERT LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+896,THOMAS SCOTT,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+897,SOFIA SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+898,PETER LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+899,MEERA RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+900,ANNA NGUYEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+901,PAUL WHITE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+902,ANDREW MARTINEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+903,ROBERT WILSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+904,HELEN CLARK,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+905,HENRY LEE,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+906,JAMES HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+907,ANDREW ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+908,JAMES MILLER,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+909,ELENA LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+910,PRIYA LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+911,HENRY RODRIGUEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+912,MICHAEL ALLEN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+913,ELENA KING,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+914,ANNA ROBINSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+915,PETER WILSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+916,MARIA LOPEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+917,IRENE GONZALEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+918,ROBERT RAMIREZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+919,WEI PATEL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+920,ANNA HERNANDEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+921,JOHN MARTIN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+922,JOHN SANCHEZ,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+923,ANNA JACKSON,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+924,JAMES HILL,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+925,JAMES BROWN,0,true_negative,synthetic_person,,SYNTHETIC,,individual
+926,ROBERT SMITH,0,true_negative,synthetic_person,,SYNTHETIC,,individual
