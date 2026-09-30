@@ -50,8 +50,10 @@ real onboarding decisions.
 - **FATF grey-list countries are not automatic EDD.** FATF states that
   increased-monitoring status does not by itself call for EDD, so they carry a
   moderate weight. Call-for-action countries force High.
-- **Review scheduling** uses synthetic last-review dates. The overdue counts
-  demonstrate the logic and are not a finding.
+- **Review scheduling** uses synthetic last-review dates. All synthetic customers
+  share a single last-review date (2023-05-30), so the overdue counts and the
+  overdue-review query (sql/05) demonstrate the logic only. Ranking within a tier
+  is effectively a tie and is not a finding.
 
 ## Beneficial ownership
 - **Ownership percentage only.** Control through voting rights, nominees, trusts
