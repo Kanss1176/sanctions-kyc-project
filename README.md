@@ -48,9 +48,12 @@ then run in this order:
     python src/risk_scoring.py
     python src/escalation.py
     python src/ubo.py
-    python src/triage.py
+    python src/triage.py 
+    python src/run_sql.py
 
 Random seeds are fixed, so the test set and results are reproducible.
+
+SQL analysis: `python src/run_sql.py` runs six DuckDB queries over the processed files and saves the results to `docs/sql_results/`.
 
 ## Limitations
 See [`docs/limitations.md`](docs/limitations.md): synthetic customers and
