@@ -1,0 +1,4 @@
+band,alerts,true_alerts,false_positives,false_positive_share
+all_alerts (>=75),467,341,126,0.27
+auto_escalate (>=85),309,289,20,0.065
+analyst_review (75-84),158,52,106,0.671
