@@ -1,0 +1,4 @@
+risk_tier,near_miss,true_match,true_negative
+High,32,296,24
+Low,59,14,297
+Medium,89,50,65

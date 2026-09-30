@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-06-19",
+  "source": "FATF: Jurisdictions under Increased Monitoring and High-Risk Jurisdictions subject to a Call for Action, 19 June 2026",
+  "call_for_action": ["IRAN", "NORTH KOREA", "MYANMAR"],
+  "increased_monitoring": [
+    "ANGOLA", "BOLIVIA", "BOSNIA AND HERZEGOVINA", "BULGARIA", "CAMEROON",
+    "COTE D'IVOIRE", "DEMOCRATIC REPUBLIC OF THE CONGO", "HAITI", "IRAQ",
+    "KENYA", "KUWAIT", "LAO PDR", "LEBANON", "MONACO", "NEPAL",
+    "PAPUA NEW GUINEA", "SOUTH SUDAN", "SYRIA", "VENEZUELA", "VIETNAM",
+    "VIRGIN ISLANDS (UK)", "YEMEN"
+  ]
+}
