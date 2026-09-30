@@ -1,0 +1,5 @@
+risk_tier,due_diligence,customers,pep_flagged,avg_risk_points
+High,EDD,352,9.0,60.8
+Medium,CDD,191,0.0,33.4
+Medium,EDD,13,13.0,30.8
+Low,CDD,370,0.0,6.2
