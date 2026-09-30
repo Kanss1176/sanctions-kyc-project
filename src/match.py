@@ -25,11 +25,15 @@ W_TS, W_JW, W_PH = 0.5, 0.3, 0.2
 TOP_K = 15
 
 
+SUFFIX_MAP = {"LIMITED": "LTD", "COMPANY": "CO", "CORPORATION": "CORP",
+              "INCORPORATED": "INC", "INTERNATIONAL": "INTL", "TRADING": "TRDG"}
 def prep(s):
     s = unicodedata.normalize("NFKD", str(s))
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = re.sub(r"[^\w\s]", " ", s.upper())
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    return " ".join(SUFFIX_MAP.get(t, t) for t in s.split())
+
 
 
 def metaphones(s):
