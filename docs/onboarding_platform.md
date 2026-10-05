@@ -61,12 +61,12 @@ Scenario runs use `src/scenarios.py`. Staffing is varied; demand is the same ran
 
 | Scenario (makers/checkers) | Mean SLA breach rate | Range across 20 seeds |
 |---|---|---|
-| FIFO 5/3 | 0.2% | 0.0% to 1.2% |
-| FIFO 4/2 | 66.2% | 52.8% to 79.5% |
-| Priority 4/2 | 62.3% | 44.5% to 78.8% |
+| FIFO 5/3 | 0.2% | 0.0% to 1.6% |
+| FIFO 4/2 | 66.3% | 51.1% to 78.1% |
+| Priority 4/2 | 61.6% | 42.6% to 76.9% |
 
-- **Capacity matters far more than queue policy.** Moving from 5/3 to 4/2 takes breaches from about 0% to about 65% under these assumptions.
-- **Priority scheduling helps a little.** At 4/2, earliest-due-date-first lowered the breach rate by about 4 points on average (worst seed -8.3 points, best +0.07), and was better in 19 of 20 seeds. It did not prevent overload: about 270 requests stayed open on average.
+- **Capacity matters far more than queue policy.** Moving from 5/3 to 4/2 takes breaches from about 0% to about 66% under these assumptions.
+- **Priority scheduling helps a little.** At 4/2, earliest-due-date-first lowered the breach rate by about 4.7 points on average (largest reduction 9.1 points, smallest 0.8 points), and was better in 20 of 20 seeds. It did not prevent overload: about 270 requests stayed open on average.
 - **Priority moves the delay around.** In one single-seed run at 4/2, data amendments (8-hour SLA) improved while new accounts (16-hour SLA) got worse. This was not checked across seeds.
 - At 8/4, 6/3 and 5/3, breaches are at or near zero for both policies, so queue order does not matter there.
 - Escaped errors are 18 of 108 in every scenario because the detection rate is configured. They carry no information about the policies.
@@ -77,6 +77,7 @@ Two defects were found and fixed during the build. They are kept here on purpose
 
 1. **Scheduler bug in `serve()`.** A test (`test_no_completion_before_arrival`) failed. Some jobs were completing before they arrived because one server's idle-jump left the queue clock able to move backwards. Fixed by making the clock monotonic, with a new test (`test_serve_never_starts_a_job_before_it_is_ready`).
 2. **Overloaded first workflow tables.** The first workflow generator (`src/workflow_sim.py`) gave an 87.6% SLA breach rate at 6/3 staffing. That was first read as under-staffing, and staffing was raised to 8/4 to compensate. That reading was wrong. With escalation delays set to zero the same generator gave a 0.0% breach rate at both 8/4 and 6/3, and the newer queue engine showed no overload at 6/3. The cause is consistent with that generator booking each checker in arrival order, so a delayed escalated request reserved a checker far ahead and blocked later work. The tables were rebuilt on the shared queue engine (`src/workflow_v2.py`), with baseline staffing reset to 6/3. The old `simulate` function is kept in the repo but is no longer used for the tables.
+3. **Scenario baseline mismatch.** The scenario baseline first differed from the workflow baseline (1,977 vs 1,980 completed) because the two engines drew random numbers in a different order. I aligned the draw order and added a test that checks the baseline matches exactly.
 
 ## 7. Limitations
 
@@ -85,7 +86,7 @@ Two defects were found and fixed during the build. They are kept here on purpose
 - Rework adds delay to a request but does not occupy a maker or checker. Rework is not assigned to the same maker.
 - No breaks, shifts or public holidays. Work-queue "hours left" is a calendar-hour approximation.
 - Escalation rate is inflated by the sample design.
-- The scenario tables (`src/scenarios.py`) and the workflow tables (`src/workflow_v2.py`) use the same queue logic but draw random numbers in a different order, so their numbers are similar, not identical.
+- The scenario tables (`src/scenarios.py`) and the workflow tables (`src/workflow_v2.py`) use the same queue logic and draw random numbers in the same order, so the baseline scenario matches the workflow tables exactly (1,980 completed, 20 open). A test checks this.
 
 ## 8. Reproduce
 
