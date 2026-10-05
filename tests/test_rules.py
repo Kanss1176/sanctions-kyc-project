@@ -1,14 +1,6 @@
 import duckdb
 
-AS_OF = "2026-10-04 16:00:00"
-
-RULES = {
-    "R01": "e.registration_status NOT IN ('ISSUED','ANNULLED','DUPLICATE')",
-    "R02": "e.registration_status = 'ISSUED' AND e.next_renewal_ts < TIMESTAMP '" + AS_OF + "'",
-    "R03": "e.entity_status = 'INACTIVE'",
-    "R04": "e.legal_country <> e.hq_country",
-    "R05": "p.missing_parent_unexplained = 1",
-}
+from src.onboarding_rules import RULES
 
 
 def fires(rule_id, **kw):
@@ -59,3 +51,13 @@ def test_r04():
 def test_r05():
     assert fires("R05", missing_parent_unexplained=1)
     assert not fires("R05")
+
+
+def test_built_hits_match_shared_rules():
+    con = duckdb.connect("data/processed/onboarding.duckdb", read_only=True)
+    for rid in RULES:
+        built = con.sql("SELECT COUNT(*) FROM fact_rule_hit WHERE rule_id = '" + rid + "'").fetchone()[0]
+        live = con.sql(
+            "SELECT COUNT(*) FROM dim_entity e JOIN fact_parent p ON p.lei = e.lei WHERE " + RULES[rid]
+        ).fetchone()[0]
+        assert built == live
