@@ -4,7 +4,7 @@ import random
 
 import pandas as pd
 
-from src.workflow_sim import business_days
+from src.workflow_sim import ERRORS, business_days
 
 
 def serve(jobs, n_servers, policy):
@@ -47,13 +47,15 @@ def run(cfg, leis, severe, policy, makers, checkers):
         lei = rng.choice(leis)
         t = rng.choices(names, weights)[0]
         sp = types[t]
+        error = rng.random() < cfg["error_rate"]
         reqs.append({
             "arr": arr, "type": t, "due": arr + sp["sla_hours"] * 60,
             "mwork": sp["maker_minutes"] * rng.uniform(0.7, 1.3),
             "cwork": sp["checker_minutes"] * rng.uniform(0.7, 1.3),
             "delay": rng.uniform(lo, hi) * 60 if lei in severe else 0.0,
-            "error": rng.random() < cfg["error_rate"],
-            "caught": rng.random() < cfg["checker_detection_rate"],
+            "error": error,
+            "code": rng.choices([e[0] for e in ERRORS], [e[2] for e in ERRORS])[0] if error else None,
+            "caught": bool(error and rng.random() < cfg["checker_detection_rate"]),
         })
     ms = serve([(r["arr"], r["mwork"], r["due"]) for r in reqs], makers, policy)
     cj = [(ms[i][1] + r["delay"], r["cwork"], r["due"]) for i, r in enumerate(reqs)]

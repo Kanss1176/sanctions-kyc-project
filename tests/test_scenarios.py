@@ -62,3 +62,16 @@ def test_seed_table_has_twenty_seeds_per_scenario():
     ).fetchone()[0]
     total = con.sql("SELECT COUNT(*) FROM scenario_seeds").fetchone()[0]
     assert bad == 0 and total == 60
+
+
+def test_baseline_scenario_reproduces_the_workflow_tables():
+    con = duckdb.connect("data/processed/onboarding.duckdb", read_only=True)
+    name = "fifo_%d_%d" % (CFG["makers"], CFG["checkers"])
+    row = con.sql(
+        "SELECT completed, open_requests FROM scenario_results WHERE scenario = '" + name + "' AND request_type = 'ALL'"
+    ).fetchone()
+    assert row is not None, "no scenario named " + name
+    w = con.sql(
+        "SELECT COUNT(*) FILTER (WHERE status = 'Completed'), COUNT(*) FILTER (WHERE status = 'Open') FROM fact_request"
+    ).fetchone()
+    assert tuple(row) == tuple(w)
