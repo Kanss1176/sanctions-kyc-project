@@ -53,3 +53,12 @@ def test_serve_never_starts_a_job_before_it_is_ready():
     jobs = [(0, 100, 999), (1, 5, 999), (50, 5, 999), (60, 5, 999), (70, 5, 999)]
     out = serve(jobs, 2, "priority")
     assert all(out[i][0] >= jobs[i][0] for i in range(len(jobs)))
+
+
+def test_seed_table_has_twenty_seeds_per_scenario():
+    con = duckdb.connect("data/processed/onboarding.duckdb", read_only=True)
+    bad = con.sql(
+        "SELECT COUNT(*) FROM (SELECT scenario, COUNT(DISTINCT seed) AS n FROM scenario_seeds GROUP BY scenario) WHERE n <> 20"
+    ).fetchone()[0]
+    total = con.sql("SELECT COUNT(*) FROM scenario_seeds").fetchone()[0]
+    assert bad == 0 and total == 60
