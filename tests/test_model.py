@@ -1,5 +1,4 @@
 import duckdb
-import pytest
 
 con = duckdb.connect("data/processed/onboarding.duckdb", read_only=True)
 
@@ -32,9 +31,14 @@ def test_dates_parse():
     assert q("SELECT COUNT(*) FROM dim_entity WHERE next_renewal_ts IS NULL") == 0
 
 
-@pytest.mark.xfail(reason="Known source-data anomaly: 1 entity has renewal before registration. Logged as a finding.", strict=False)
-def test_renewal_not_before_registration():
-    assert q("SELECT COUNT(*) FROM dim_entity WHERE next_renewal_ts < initial_reg_ts") == 0
+def test_every_renewal_anomaly_is_logged():
+    violations = q("SELECT COUNT(*) FROM dim_entity WHERE next_renewal_ts < initial_reg_ts")
+    logged = q("SELECT COUNT(*) FROM dq_finding WHERE check_id = 'DQ01'")
+    assert violations == logged
+
+
+def test_unexpected_anomalies_are_zero():
+    assert q("SELECT COUNT(*) FROM dq_finding WHERE check_id = 'DQ01' AND registration_status <> 'ANNULLED'") == 0
 
 
 def test_every_country_in_dim_country():

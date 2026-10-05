@@ -52,6 +52,21 @@ INSERT INTO dim_rule VALUES
 con.sql("CREATE TABLE model_build_log (built_at TIMESTAMP, as_of TIMESTAMP)")
 con.sql("INSERT INTO model_build_log VALUES (now(), TIMESTAMP '" + AS_OF + "')")
 
-for t in ["dim_entity", "dim_country", "dim_rule"]:
+con.sql("""
+CREATE TABLE dq_finding AS
+SELECT
+  'DQ01' AS check_id,
+  'Renewal date earlier than initial registration' AS check_name,
+  lei,
+  registration_status,
+  'initial=' || CAST(initial_reg_ts AS VARCHAR) || ' renewal=' || CAST(next_renewal_ts AS VARCHAR) AS detail,
+  CASE WHEN registration_status = 'ANNULLED'
+       THEN 'Expected for annulled records; exclude ANNULLED from renewal-date rules'
+       ELSE 'Unexpected; escalate to data owner' END AS disposition
+FROM dim_entity
+WHERE next_renewal_ts < initial_reg_ts
+""")
+
+for t in ["dim_entity", "dim_country", "dim_rule", "dq_finding"]:
     print(t, con.sql("SELECT COUNT(*) FROM " + t).fetchone()[0])
 print("Saved:", DB)
