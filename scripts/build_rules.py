@@ -1,25 +1,16 @@
+import os
+import sys
+
 import duckdb
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from src.onboarding_rules import RULES, hit_query
+
 DB = "data/processed/onboarding.duckdb"
-AS_OF = "2026-10-04 16:00:00"
 
 con = duckdb.connect(DB)
 con.sql("DROP TABLE IF EXISTS fact_rule_hit")
-
-RULES = {
-    "R01": "e.registration_status NOT IN ('ISSUED','ANNULLED','DUPLICATE')",
-    "R02": "e.registration_status = 'ISSUED' AND e.next_renewal_ts < TIMESTAMP '" + AS_OF + "'",
-    "R03": "e.entity_status = 'INACTIVE'",
-    "R04": "e.legal_country <> e.hq_country",
-    "R05": "p.missing_parent_unexplained = 1",
-}
-
-parts = []
-for rid, cond in RULES.items():
-    parts.append(
-        "SELECT '" + rid + "' AS rule_id, e.lei, e.registration_status "
-        "FROM dim_entity e JOIN fact_parent p ON p.lei = e.lei WHERE " + cond
-    )
+parts = [hit_query(rid) for rid in RULES]
 con.sql("CREATE TABLE fact_rule_hit AS " + " UNION ALL ".join(parts))
 
 print("rule hits (unweighted, in sample):")
