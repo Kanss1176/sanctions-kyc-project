@@ -47,7 +47,9 @@ INSERT INTO dim_rule VALUES
 ('R02','Renewal date passed at snapshot time','observed',3,'escalate',48),
 ('R03','Entity status is INACTIVE','observed',2,'fix',72),
 ('R04','Legal and headquarters countries differ','observed',2,'fix',72),
-('R05','No parent reported and no reporting exception','observed',2,'fix',72)
+('R05','No parent reported and no reporting exception','observed',2,'fix',72),
+('R06','Name is a potential sanctions-list match (review only)','derived',3,'escalate',24),
+('R07','Legal or HQ country is on the FATF list','derived',2,'escalate',48)
 """)
 
 con.sql("CREATE TABLE model_build_log (built_at TIMESTAMP, as_of TIMESTAMP)")

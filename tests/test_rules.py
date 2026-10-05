@@ -1,6 +1,6 @@
 import duckdb
 
-from src.onboarding_rules import RULES
+from src.onboarding_rules import FROM_SQL, RULES
 
 
 def fires(rule_id, **kw):
@@ -58,7 +58,7 @@ def test_built_hits_match_shared_rules():
     for rid in RULES:
         built = con.sql("SELECT COUNT(*) FROM fact_rule_hit WHERE rule_id = '" + rid + "'").fetchone()[0]
         live = con.sql(
-            "SELECT COUNT(*) FROM dim_entity e JOIN fact_parent p ON p.lei = e.lei WHERE " + RULES[rid]
+            "SELECT COUNT(*) FROM " + FROM_SQL + " WHERE " + RULES[rid]
         ).fetchone()[0]
         assert built == live
 
