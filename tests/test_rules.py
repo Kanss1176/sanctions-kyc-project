@@ -61,3 +61,9 @@ def test_built_hits_match_shared_rules():
             "SELECT COUNT(*) FROM dim_entity e JOIN fact_parent p ON p.lei = e.lei WHERE " + RULES[rid]
         ).fetchone()[0]
         assert built == live
+
+
+def test_dim_rule_matches_shared_rules():
+    con = duckdb.connect("data/processed/onboarding.duckdb", read_only=True)
+    ids = sorted(r[0] for r in con.sql("SELECT rule_id FROM dim_rule").fetchall())
+    assert ids == sorted(RULES)
