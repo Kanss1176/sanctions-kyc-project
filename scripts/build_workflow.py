@@ -5,7 +5,7 @@ import duckdb
 import yaml
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.workflow_sim import simulate
+from src.workflow_v2 import simulate_queue as simulate
 
 cfg = yaml.safe_load(open("config.yaml", encoding="utf-8"))
 con = duckdb.connect("data/processed/onboarding.duckdb")

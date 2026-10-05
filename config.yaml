@@ -6,8 +6,8 @@ window_start: "2026-10-01"
 window_end: "2026-10-31"
 workday_start_hour: 9
 workday_hours: 9
-makers: 8
-checkers: 4
+makers: 6
+checkers: 3
 error_rate: 0.06
 checker_detection_rate: 0.85
 rework_factor: 0.5

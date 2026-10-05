@@ -1,7 +1,7 @@
 import duckdb
 import yaml
 
-from src.workflow_sim import simulate
+from src.workflow_v2 import simulate_queue as simulate
 
 CFG = yaml.safe_load(open("config.yaml", encoding="utf-8"))
 
