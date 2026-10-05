@@ -42,11 +42,27 @@ def test_unexpected_anomalies_are_zero():
 
 
 def test_every_country_in_dim_country():
-    assert q("""SELECT COUNT(*) FROM dim_entity e
-                LEFT JOIN dim_country c ON e.legal_country = c.country_code
-                WHERE c.country_code IS NULL""") == 0
+    sql = (
+        "SELECT COUNT(*) FROM dim_entity e "
+        "LEFT JOIN dim_country c ON e.legal_country = c.country_code "
+        "WHERE c.country_code IS NULL"
+    )
+    assert q(sql) == 0
 
 
 def test_weights_reconstruct_population():
     total = q("SELECT SUM(sampling_weight) FROM dim_entity")
     assert round(total) == 1941854
+
+
+def test_parent_table_covers_every_entity():
+    assert q("SELECT COUNT(*) FROM fact_parent") == q("SELECT COUNT(*) FROM dim_entity")
+
+
+def test_parent_flags_are_consistent():
+    sql = (
+        "SELECT COUNT(*) FROM fact_parent "
+        "WHERE has_direct_parent = 0 AND has_ultimate_parent = 0 "
+        "AND missing_parent_explained + missing_parent_unexplained <> 1"
+    )
+    assert q(sql) == 0
