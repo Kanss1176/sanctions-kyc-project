@@ -17,3 +17,13 @@ request_types:
   signatory_change: {share: 0.20, sla_hours: 8, maker_minutes: 30, checker_minutes: 10}
   document_refresh: {share: 0.35, sla_hours: 12, maker_minutes: 20, checker_minutes: 8}
   data_amendment: {share: 0.20, sla_hours: 8, maker_minutes: 15, checker_minutes: 6}
+
+scenarios:
+  - {name: fifo_8_4, policy: fifo, makers: 8, checkers: 4}
+  - {name: priority_8_4, policy: priority, makers: 8, checkers: 4}
+  - {name: fifo_6_3, policy: fifo, makers: 6, checkers: 3}
+  - {name: priority_6_3, policy: priority, makers: 6, checkers: 3}
+  - {name: fifo_5_3, policy: fifo, makers: 5, checkers: 3}
+  - {name: priority_5_3, policy: priority, makers: 5, checkers: 3}
+  - {name: fifo_4_2, policy: fifo, makers: 4, checkers: 2}
+  - {name: priority_4_2, policy: priority, makers: 4, checkers: 2}
