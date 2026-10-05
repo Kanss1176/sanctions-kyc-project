@@ -36,8 +36,10 @@ The sample holds 50% non-ISSUED records against 41.4% in those 12 countries. Exc
 
 ## 6. Sanctions lists
 
-| List | Version or download date | Records |
-|---|---|---|
-| OFAC | TO ADD | TO ADD |
-| UN | TO ADD | TO ADD |
-| EU | TO ADD | TO ADD |
+| List | File | File saved (local) | Records | SHA-256 |
+|---|---|---|---|---|
+| OFAC SDN | data/raw/sdn.csv | 2026-09-29 | 19,392 rows | CF3FFCED4675AA1542F616A15C285266BD0466D8D4508C08A1AA9851A639B276 |
+| UN consolidated | data/raw/un_consolidated.xml | 2026-09-29 | 736 individuals + 275 entities | 733907C7A9C584F166F298DE8545174176D37092968BD7CD9F26C4893C5D1D33 |
+| EU consolidated | data/raw/eu_consolidated.xml | 2026-09-29 | 6,241 top-level elements | CD59ECCB0278D33181C1D87814236109287C9EA5925502F00ACFD2E0FD7FE440 |
+
+Dates are the local file save times, not the lists' own publication dates. The sanctions lists (29 September) are older than the GLEIF snapshot (4 October). Any name match against a real company is a potential match for review only.
