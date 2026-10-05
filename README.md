@@ -7,6 +7,8 @@ resolution and periodic review scheduling.
 > **This is a simulation on public and synthetic data. It is not a compliance
 > system and has no legal authority.**
 
+> **Also in this repo: Client Onboarding Control Platform.** A simulated maker-checker onboarding workflow on public GLEIF data, with rules, SQL metrics and scenario analysis. All workflow results are simulated with assumed parameters. See [`docs/onboarding_platform.md`](docs/onboarding_platform.md).
+
 Start with the write-up: [`docs/kyc_aml_program_note.md`](docs/kyc_aml_program_note.md)
 
 ## Headline results
