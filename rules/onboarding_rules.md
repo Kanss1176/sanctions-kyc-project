@@ -1,12 +1,12 @@
 # Onboarding rule catalogue
 
-Entity data is real (GLEIF Golden Copy published 2026-10-04 16:00). Rules R01 to R05 test that real data. The workflow, requests, errors, documents and signatories are simulated and are added in later steps.
+Entity data is real (GLEIF Golden Copy published 2026-10-04 16:00). Rules R01 to R07 test that real data. The workflow, requests, errors, documents and signatories are simulated and are added in later steps.
 
 **Severity, action and SLA are my assumptions. They are not Citi policy.**
 
 As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 
-## Implemented rules (R01 to R05)
+## Implemented rules (R01 to R07)
 
 | Rule | Check | Source | Severity (1-3) | Action | SLA (hours) |
 |---|---|---|---|---|---|
@@ -15,18 +15,20 @@ As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 | R03 | Entity status is INACTIVE | Observed | 2 | Fix | 72 |
 | R04 | Legal-address country differs from headquarters country | Observed | 2 | Fix | 72 |
 | R05 | No parent reported and no reporting exception on file | Observed | 2 | Fix | 72 |
+| R06 | Name scores 80 or above against OFAC/UN/EU list names. Potential match for review only, not a finding. | Derived | 3 | Escalate | 24 |
+| R07 | Legal or headquarters country is on the FATF lists in rules/fatf_lists.json (as of 9 June 2026) | Derived | 2 | Escalate | 48 |
 
 The check logic lives in one place, `src/onboarding_rules.py`. The build script and the tests both import it, and a test
 @'
 # Onboarding rule catalogue
 
-Entity data is real (GLEIF Golden Copy published 2026-10-04 16:00). Rules R01 to R05 test that real data. The workflow, requests, errors, documents and signatories are simulated and are added in later steps.
+Entity data is real (GLEIF Golden Copy published 2026-10-04 16:00). Rules R01 to R07 test that real data. The workflow, requests, errors, documents and signatories are simulated and are added in later steps.
 
 **Severity, action and SLA are my assumptions. They are not Citi policy.**
 
 As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 
-## Implemented rules (R01 to R05)
+## Implemented rules (R01 to R07)
 
 | Rule | Check | Source | Severity (1-3) | Action | SLA (hours) |
 |---|---|---|---|---|---|
@@ -35,6 +37,8 @@ As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 | R03 | Entity status is INACTIVE | Observed | 2 | Fix | 72 |
 | R04 | Legal-address country differs from headquarters country | Observed | 2 | Fix | 72 |
 | R05 | No parent reported and no reporting exception on file | Observed | 2 | Fix | 72 |
+| R06 | Name scores 80 or above against OFAC/UN/EU list names. Potential match for review only, not a finding. | Derived | 3 | Escalate | 24 |
+| R07 | Legal or headquarters country is on the FATF lists in rules/fatf_lists.json (as of 9 June 2026) | Derived | 2 | Escalate | 48 |
 
 The check logic lives in one place, `src/onboarding_rules.py`. The build script and the tests both import it, and a test compares the built `fact_rule_hit` table with the live rule SQL.
 
@@ -49,6 +53,11 @@ The check logic lives in one place, `src/onboarding_rules.py`. The build script 
 
 | Rule | Check | Source |
 |---|---|---|
-| R06 | Name matches a sanctions list at threshold 80. A potential match for review only, never a finding. | Own matcher |
-| R07 | Country is on the FATF list in `rules/fatf_lists.json` (dated) | Own file |
 | R08-R12 | Missing or expired document; signatory authority evidence missing; form name differs from registry name | Simulated |
+
+## R06 and R07 notes
+
+- R06 uses my own matcher (src/match.py) against list names. The sanctions lists also hold individuals, so company names will mostly produce false positives. `fact_screen` stores the LEI, score and list ID only, never a list name. Results are reported as counts only.
+- In the sample, 47 of 5,000 entities (0.9%) score 80 or above. No manual review has been done.
+- R07 fires on 0 of 5,000 sampled entities, because none of the 12 sampled countries is on the FATF lists. Unit tests prove it fires for IR, KP and VG.
+- The sanctions files were saved on 2026-09-29, earlier than the GLEIF snapshot.
