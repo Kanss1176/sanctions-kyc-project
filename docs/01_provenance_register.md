@@ -7,12 +7,11 @@ Publish time: 2026-10-04 16:00. Downloaded: 2026-10-05.
 
 | File | Format version | Page record count | SHA-256 | Size |
 |---|---|---|---|---|
-| 20261004-1600-gleif-goldencopy-lei2-golden-copy.csv.zip | LEI-CDF v3.1 | 3,451,551 | PASTE_HASH_FROM_LOG | PASTE_SIZE |
-| 20261004-1600-gleif-goldencopy-rr-golden-copy.csv.zip | RR-CDF v2.1 | 489,935 | PASTE_HASH_FROM_LOG | PASTE_SIZE |
-| 20261004-1600-gleif-goldencopy-repex-golden-copy.csv.zip | Reporting Exceptions v2.1 | 6,396,820 | PASTE_HASH_FROM_LOG | PASTE_SIZE |
+| 20261004-1600-gleif-goldencopy-lei2-golden-copy.csv.zip | LEI-CDF v3.1 | 3,451,551 | 64F5848462F93B5EBF515242254A5DF24CD6D58DF1764E993D0AC17535256123 | 483.6 MB |
+| 20261004-1600-gleif-goldencopy-rr-golden-copy.csv.zip | RR-CDF v2.1 | 489,935 | 6749572FCEA3F00B97F3B98ADB3A06225C62439345134408EC49F14C46450CB7 | 23.3 MB |
+| 20261004-1600-gleif-goldencopy-repex-golden-copy.csv.zip | Reporting Exceptions v2.1 | 6,396,820 | 86BDF7507124D75A4304A33DCA80714DEE990093B5AFBFC991D1CF8F4C4F7DAB | 59.1 MB |
 
-Level 1 rows loaded: 3,451,551 (matches the page).
-Relationship and reporting-exception rows loaded: to be added after the check.
+Level 1 rows loaded: 3,451,551 (page: 3,451,551, match). Relationships loaded: 489,935 (page: 489,935, match). Reporting exceptions loaded: 6,396,820 (page: 6,396,820, match).
 
 ## 2. As-of time
 
