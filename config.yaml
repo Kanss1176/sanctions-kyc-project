@@ -1,0 +1,29 @@
+# SIMULATION SETTINGS. Every value below is an assumption, not Citi data or policy.
+# Times are business hours: Mon-Fri, 09:00-18:00, no public holidays.
+seed: 20261001
+requests: 2000
+window_start: "2026-10-01"
+window_end: "2026-10-31"
+workday_start_hour: 9
+workday_hours: 9
+makers: 6
+checkers: 3
+error_rate: 0.06
+checker_detection_rate: 0.85
+rework_factor: 0.5
+escalation_delay_hours: [2, 6]
+request_types:
+  new_account: {share: 0.25, sla_hours: 16, maker_minutes: 45, checker_minutes: 15}
+  signatory_change: {share: 0.20, sla_hours: 8, maker_minutes: 30, checker_minutes: 10}
+  document_refresh: {share: 0.35, sla_hours: 12, maker_minutes: 20, checker_minutes: 8}
+  data_amendment: {share: 0.20, sla_hours: 8, maker_minutes: 15, checker_minutes: 6}
+
+scenarios:
+  - {name: fifo_8_4, policy: fifo, makers: 8, checkers: 4}
+  - {name: priority_8_4, policy: priority, makers: 8, checkers: 4}
+  - {name: fifo_6_3, policy: fifo, makers: 6, checkers: 3}
+  - {name: priority_6_3, policy: priority, makers: 6, checkers: 3}
+  - {name: fifo_5_3, policy: fifo, makers: 5, checkers: 3}
+  - {name: priority_5_3, policy: priority, makers: 5, checkers: 3}
+  - {name: fifo_4_2, policy: fifo, makers: 4, checkers: 2}
+  - {name: priority_4_2, policy: priority, makers: 4, checkers: 2}

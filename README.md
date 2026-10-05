@@ -59,3 +59,6 @@ SQL analysis: `python src/run_sql.py` runs six DuckDB queries over the processed
 See [`docs/limitations.md`](docs/limitations.md): synthetic customers and
 ownership, a rule-generated test set with no hold-out, no transliteration
 handling, name-only matching, and ownership based on percentage only.
+## Client Onboarding Control Platform (branch `onboarding-platform`)
+
+A separate project in this repo: GLEIF-based onboarding rules, a simulated maker-checker workflow and SQL metrics. See [`docs/onboarding_platform.md`](docs/onboarding_platform.md).
