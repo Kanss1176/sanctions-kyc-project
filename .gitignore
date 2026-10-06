@@ -2,3 +2,4 @@
 data/
 __pycache__/
 powerbi/source/
+excel/OLD_*.xlsx
