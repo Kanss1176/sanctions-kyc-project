@@ -18,10 +18,10 @@ In my simulation the escalation share follows my own severity and action assumpt
 
 - **Rules R01 to R07:** registration and renewal status, entity status, country mismatch, missing parent, name score against public sanctions lists (potential match for review only), and FATF-listed country. Severity, action and SLA values are my assumptions. Catalogue: `rules/onboarding_rules.md`.
 - **Workflow simulation:** four request types, a shared queue engine with FIFO and priority options (`config.yaml`), 20-seed scenario comparison.
-- **Excel operations pack** (`excel/Citi_Onboarding_Ops_Pack.xlsx`): Daily_Queue with priority bands, Checker_Log with maker-checker validation, KPI_Summary checked against DuckDB, Lodgment_Log, Archive_Manifest, Reg_Watch change register and UAT_Results.
+- **Excel operations pack** (`excel/Citi_Onboarding_Ops_Pack.xlsx`): Daily_Queue with priority bands, Checker_Log with a maker-checker flag, KPI_Summary checked against DuckDB, Lodgment_Log, Archive_Manifest, Reg_Watch change register and UAT_Results.
 - **Word procedures** (`docs/procedures/`): signatory update, renewal-overdue rule (v1.0 and v1.1 with change record CR-001, a simulated change), escalation matrix (v1.0 and v1.1), and six sample client and internal replies.
 - **Tests:** 50 pytest tests covering rules, model integrity, workflow invariants, scenarios and SQL metrics.
-- **UAT:** 38 cases. 21 automated cases are linked to pytest and passed. 17 manual and document cases are written but not yet run.
+- **UAT:** 39 cases, all run: 37 pass, 2 fail. 21 are linked to pytest; the rest are manual Excel and document checks. Both fails are findings about the Checker_Log: it flags a checker who is the maker but does not block it (UAT22), and it accepts a maker ID as checker with no flag (UAT24).
 
 Full write-up: [`docs/onboarding_platform.md`](docs/onboarding_platform.md).
 
