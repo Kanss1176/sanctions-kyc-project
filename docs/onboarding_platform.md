@@ -66,8 +66,8 @@ Scenario runs use `src/scenarios.py`. Staffing is varied; demand is the same ran
 | Priority 4/2 | 61.6% | 42.6% to 76.9% |
 
 - **Capacity matters far more than queue policy.** Moving from 5/3 to 4/2 takes breaches from about 0% to about 66% under these assumptions.
-- **Priority scheduling helps a little.** At 4/2, earliest-due-date-first lowered the breach rate by about 4.7 points on average (largest reduction 9.1 points, smallest 0.8 points), and was better in 20 of 20 seeds. It did not prevent overload: about 270 requests stayed open on average.
-- **Priority moves the delay around.** In one single-seed run at 4/2, data amendments (8-hour SLA) improved while new accounts (16-hour SLA) got worse. This was not checked across seeds.
+- **Priority scheduling helps a little.** At 4/2, earliest-due-date-first lowered the breach rate by about 4.7 points on average (largest reduction 9.1 points, smallest 0.8 points), and was better in 20 of 20 seeds. It did not prevent overload: about 273 requests stayed open on average, against about 281 under FIFO.
+- **Per-request-type effects of the priority queue have not been re-checked** since the scenario engine was aligned with the workflow tables, so no per-type claim is made here.
 - At 8/4, 6/3 and 5/3, breaches are at or near zero for both policies, so queue order does not matter there.
 - Escaped errors are 18 of 108 in every scenario because the detection rate is configured. They carry no information about the policies.
 
