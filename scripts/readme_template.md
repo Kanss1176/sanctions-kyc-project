@@ -8,8 +8,8 @@ A simulated client onboarding operation built on real public GLEIF entity data. 
 
 | Result | Label | Value |
 |---|---|---|
-| Control-rule hits in the 5,000-entity sample (unweighted, over-represents lapsed and retired records) | Observed from GLEIF | R01 2,466, R02 5, R03 959, R04 120, R05 349, R06 47 |
-| Baseline workflow, 6 makers and 3 checkers: 2,000 requests, 1,980 completed, 20 open | Simulated | Median turnaround 1.90 h, P90 5.93 h, 0 SLA breaches, 993 escalated requests |
+| Control-rule hits in the 5,000-entity sample (unweighted, over-represents lapsed and retired records) | Observed from GLEIF | @@HITS@@ |
+| Baseline workflow, 6 makers and 3 checkers: @@REQ@@ requests, @@DONE@@ completed, @@OPEN@@ open | Simulated | Median turnaround @@MED@@ h, P90 @@P90@@ h, @@BREACH@@ SLA breaches, @@ESC@@ escalated requests |
 | Excel pack figures agree with the DuckDB tables, and the SQL metrics are re-computed in Python | Derived | KPI_Summary check cell shows ALL OK; 50 automated tests pass |
 
 In my simulation the escalation share follows my own severity and action assumptions, so it is not a typical rate.
@@ -49,64 +49,3 @@ Raw GLEIF and sanctions files are not committed (see `docs/01_provenance_registe
 
 ---
 
-## Project 2: Sanctions & PEP Screening with Risk-Based Due Diligence
-
-A simulation of a bank's KYC screening flow on public OFAC / UN / EU sanctions
-lists: name matching, risk tiering, CDD/EDD escalation, beneficial-ownership
-resolution and periodic review scheduling.
-
-> **This is a simulation on public and synthetic data. It is not a compliance
-> system and has no legal authority.**
-
-Start with the write-up: [`docs/kyc_aml_program_note.md`](docs/kyc_aml_program_note.md)
-
-## Headline results
-Evaluated on 926 labelled names (360 true matches, 180 near-misses, 386 true negatives):
-
-| Threshold | Recall | Precision | False-positive rate |
-|---|---|---|---|
-| 75 | 94.7% | 73.0% | 22.3% |
-| 80 | 92.2% | 85.8% | 9.7% |
-| 85 | 80.3% | 93.5% | 3.5% |
-
-The near-miss set is a deliberate stress test, so these false-positive rates are
-worse than a real customer base would give.
-
-## What is real and what is synthetic
-| Real, public | Synthetic (clearly labelled) |
-|---|---|
-| OFAC SDN list, UN consolidated list, EU consolidated list | Test-name variants and near-misses |
-| FATF lists (19 June 2026) | Customer country, PEP flags, review dates |
-| SEC EDGAR company names (true negatives) | 51 ownership structures |
-
-## Repository layout
-    data_pointers/   where the data comes from, plus the generated test set
-    sql/             entity-resolution, ranking and review queries
-    src/             ingest, build_testset, match, risk_scoring, escalation, ubo, triage
-    rules/           risk scoring catalogue, CDD/EDD thresholds, review schedule, FATF lists
-    docs/            program note, methodology, regulatory basis, limitations, outputs
-    notebooks/       exploration
-    dashboard/       reserved for the dashboard
-
-## Reproduce
-Raw lists are not committed. Download them as described in `data_pointers/`,
-then run in this order:
-
-    pip install pandas rapidfuzz jellyfish networkx duckdb
-    python src/ingest.py
-    python src/build_testset.py
-    python src/match.py
-    python src/risk_scoring.py
-    python src/escalation.py
-    python src/ubo.py
-    python src/triage.py 
-    python src/run_sql.py
-
-Random seeds are fixed, so the test set and results are reproducible.
-
-SQL analysis: `python src/run_sql.py` runs six DuckDB queries over the processed files and saves the results to `docs/sql_results/`.
-
-## Limitations
-See [`docs/limitations.md`](docs/limitations.md): synthetic customers and
-ownership, a rule-generated test set with no hold-out, no transliteration
-handling, name-only matching, and ownership based on percentage only.
