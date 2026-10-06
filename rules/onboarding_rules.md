@@ -11,7 +11,7 @@ As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 | Rule | Check | Source | Severity (1-3) | Action | SLA (hours) |
 |---|---|---|---|---|---|
 | R01 | Registration status is not ISSUED (ANNULLED and DUPLICATE excluded) | Observed | 3 | Escalate | 48 |
-| R02 | Status is ISSUED but the next renewal date has passed | Observed | 3 | Escalate | 48 |
+| R02 | Status is ISSUED but the next renewal date has passed | Observed | 3 | Escalate | 24 |
 | R03 | Entity status is INACTIVE | Observed | 2 | Fix | 72 |
 | R04 | Legal-address country differs from headquarters country | Observed | 2 | Fix | 72 |
 | R05 | No parent reported and no reporting exception on file | Observed | 2 | Fix | 72 |
