@@ -23,8 +23,8 @@ Hits in the 5,000-entity sample:
 | R03 entity status INACTIVE | 959 | 19.2% |
 | R04 legal vs HQ country differ | 120 | 2.4% |
 | R05 no parent and no exception | 349 | 7.0% |
-| R06 (see rules/onboarding_rules.md) | 47 | 0.9% |
-| R07 (see rules/onboarding_rules.md) | 0 | 0.0% |
+| R06 sanctions name match, score 80 or above (my own matcher, counts only) | 47 | 0.9% |
+| R07 entity country is on the FATF lists | 0 | 0.0% |
 
 2,561 of 5,000 entities (51.2%) have at least one hit. R01 and R03 are inflated by the sample design (see section 1). R05 matches the parent table count (349), which serves as a cross-check.
 
