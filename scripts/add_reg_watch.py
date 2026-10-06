@@ -27,9 +27,9 @@ rows = [
  ["REG03", "FATF lists", str(fatf["as_of"]), "Country lists saved as the baseline for rule R07",
   "Used for rule R07", "Stored in rules/fatf_lists.json", "Analyst", "Closed", "n/a", "n/a", "Observed"],
  ["REG04", "Simulated internal policy change", "simulated",
-  "R02 renewal-overdue rule gets a 30-day grace period",
-  "R02 hits in the sample: %d under v1.0, %d under v1.1" % (v10, v11),
-  "Rule text and procedure updated, tests re-run (simulated record; rule engine unchanged)", "Analyst",
+  "R02 SLA reduced from 48 hours to 24 hours (change request CR-001)",
+  "R02 hit counts unchanged. The SLA is a catalogue value that code does not read. Procedure and escalation matrix updated",
+  "Rule table, SOP-R02-01 v1.1 and SOP-ESC-01 v1.1 updated. Tests re-run, 50 passed (simulated record; rule engine unchanged)", "Analyst",
   "Closed (simulated)", "v1.0", "v1.1", "Simulated"],
 ]
 
