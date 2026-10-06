@@ -31,7 +31,7 @@ Full write-up: [`docs/onboarding_platform.md`](docs/onboarding_platform.md).
 - GLEIF Level 2 shows accounting consolidation, not beneficial ownership. A missing parent is not proof that none exists.
 - A name match against a sanctions list is a potential match for review only, not a finding. No company names are exported.
 - Lodgment_Log rows 12 to 17 and Archive_Manifest rows 14 and 15 are deliberate test cases.
-- The workbook's maker-checker control on Checker_Log is being re-tested (UAT22). Treat it as unconfirmed until that case is run.
+- On Checker_Log, a checker who is the same person as the maker is flagged ("CHECK: maker equals checker") but not blocked. Tested in Excel on 2026-10-06. Blocking it would need a stricter validation rule or procedure.
 
 ## Reproduce
 
