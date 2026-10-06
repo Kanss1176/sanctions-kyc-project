@@ -56,4 +56,4 @@ for c, wd in zip("ABCDEFGHIJK", (10, 30, 18, 52, 46, 52, 10, 18, 14, 14, 12)):
     w.column_dimensions[c].width = wd
 w.oddFooter.center.text = FOOTER
 wb.save(OUT)
-print("Reg_Watch built. FATF as_of:", fatf["as_of"], "| R02 v1.0:", v10, "| R02 v1.1:", v11)
+print("Reg_Watch built. FATF as_of:", fatf["as_of"])
