@@ -102,7 +102,7 @@ Order matters. `build_model.py` wipes the database, and the screen step takes ab
     python scripts/build_seeds.py
     python -m pytest tests -q
 
-Expected: 49 tests pass. SQL metrics are in `sql/metrics/` (one file per KPI), with tests that compare each against a Python recomputation.
+Expected: 50 tests pass. SQL metrics are in `sql/metrics/` (one file per KPI), with tests that compare each against a Python recomputation.
 
 ## Known limitations
 - The workbook does not block a checker who is the same person as the maker, but it flags it with "CHECK: maker equals checker" on Checker_Log (tested: maker M3 with checker M3 fires the flag, M3 with C1 does not). Blocking it outright would need a validation rule or procedure.
