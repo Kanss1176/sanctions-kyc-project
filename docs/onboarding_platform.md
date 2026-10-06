@@ -103,3 +103,12 @@ Order matters. `build_model.py` wipes the database, and the screen step takes ab
     python -m pytest tests -q
 
 Expected: 49 tests pass. SQL metrics are in `sql/metrics/` (one file per KPI), with tests that compare each against a Python recomputation.
+
+## Known limitations
+- The template does not block a checker who is the same person as the maker. Segregation of duties is not enforced by the workbook and must be enforced by procedure, or by adding a validation rule or flag formula.
+
+## Test data
+- Lodgment_Log rows 12 to 17 and Archive_Manifest rows 14 and 15 are deliberate test cases (returned, rejected, pending, and two deliberate errors that fire the red flags). All maker IDs, checker IDs, dates and document types are simulated.
+
+## Backup
+- The workbook before the fill step is saved as OLD_before_fill_DO_NOT_EDIT.xlsx. Rerun fill_lodgment_archive.py from that file, not from the main file.
