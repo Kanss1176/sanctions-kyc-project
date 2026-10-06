@@ -25,6 +25,26 @@ In my simulation the escalation share follows my own severity and action assumpt
 
 Full write-up: [`docs/onboarding_platform.md`](docs/onboarding_platform.md).
 
+## Screenshots
+
+All data in these sheets is simulated.
+
+**Daily queue.** Open requests with live hours left and priority bands.
+
+![Daily queue](docs/images/daily_queue.png)
+
+**Maker-checker log.** A checker who is also the maker is flagged with a CHECK message.
+
+![Checker log](docs/images/checker_log.png)
+
+**KPI summary.** Each Excel formula is checked against the DuckDB value.
+
+![KPI summary](docs/images/kpi_summary.png)
+
+**Procedure SOP-R02 v1.2.** The renewal-overdue procedure, with lodgment logging in step 3.
+
+![SOP-R02 v1.2](docs/images/sop_r02.png)
+
 ## Limits
 
 - Not bank data and not bank policy. Rule severity, SLAs and the 4-hour lodgment target are assumed values.
