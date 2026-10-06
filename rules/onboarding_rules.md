@@ -16,7 +16,7 @@ As-of time for all date logic: 2026-10-04 16:00:00 (the GLEIF publish time).
 | R04 | Legal-address country differs from headquarters country | Observed | 2 | Fix | 72 |
 | R05 | No parent reported and no reporting exception on file | Observed | 2 | Fix | 72 |
 | R06 | Name scores 80 or above against OFAC/UN/EU list names. Potential match for review only, not a finding. | Derived | 3 | Escalate | 24 |
-| R07 | Legal or headquarters country is on the FATF lists in rules/fatf_lists.json (as of 9 June 2026) | Derived | 2 | Escalate | 48 |
+| R07 | Legal or headquarters country is on the FATF lists in rules/fatf_lists.json (as of 19 June 2026) | Derived | 2 | Escalate | 48 |
 
 The check logic lives in one place, `src/onboarding_rules.py`. The build script and the tests both import it, and a test compares the built `fact_rule_hit` table with the live rule SQL.
 
