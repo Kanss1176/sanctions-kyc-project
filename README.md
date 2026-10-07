@@ -1,4 +1,4 @@
-# Client Onboarding Control Simulation
+# OPERATIONS SUPPORT & CLIENT ONBOARDING CONTROL SIMULATION (PUBLIC GLEIF DATA)
 
 A simulated client onboarding operation built on real public GLEIF entity data. It covers a maker-checker workflow, SLA tracking, escalation rules, an Excel operations pack, versioned Word procedures and a test suite.
 
